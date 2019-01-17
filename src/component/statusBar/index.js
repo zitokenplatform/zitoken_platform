@@ -4,31 +4,8 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import {ResponsiveMenu} from 'material-ui-responsive-menu'
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarmIcon';
+
 import './style.css';
-const menuList=[
-    {
-      text: 'test1',
-      icon: undefined,
-      tooltip: 'test1',
-      icon: <AccessAlarmIcon/>,
-      onTouchTap: ()=>{console.log('test1')}
-    },
-    {
-      text: 'test2',
-      icon: <AccessAlarmIcon/>,
-      tooltip:'test2',
-      onTouchTap: ()=>{console.log('test2')}
-    },
-    {
-      text: 'test3',
-      icon: <AccessAlarmIcon/>,
-      tooltip:'test2',
-      onTouchTap: ()=>{console.log('test2')}
-    }
-  ];
 
 const styles = {
     root: {
@@ -55,7 +32,7 @@ class StatusBar extends React.Component {
                             </div>
                         </Typography>
                         <div className="navRight">
-                            <ResponsiveMenu menuList={menuList}/>
+                            
                         </div>
                     </Toolbar>
                 </AppBar>
