@@ -1,4 +1,4 @@
-##Projetc ZiToken
+##Project ZiToken
 
 ### `npm start`
 
