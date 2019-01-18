@@ -2,10 +2,8 @@
     width: 180px;
     padding: 10px;
     display: flex;
-    margin: 0 auto;
     justify-items: center;
     justify-content: center;
-    text-justify: auto;
 }
 .logoIco{
     width: 46px;
@@ -13,16 +11,17 @@
     border-radius: 10px;
     background-color: #00be8e;
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
     color: #ffffff;
-    font-family: "Arial Rounded MT Bold";
+    font-family: "Arial";
     font-weight: bold;
     float: left;
 }
 .logoText{
-    font-size: 32px;
+    font-size: 30px;
+    height: 46px;    
     color: #d1071e;
-    font-family: "Arial Rounded MT Bold";
+    font-family: "Arial";
     font-weight: bold;
     float: left;
     margin-left: 10px;
