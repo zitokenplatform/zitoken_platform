@@ -1,7 +1,6 @@
 :local(.App) {
   margin:0px !important;
   padding: 0px !important;
-  border:0;
 }
 :local(.content){ 
   margin-left: 200px;
@@ -14,9 +13,13 @@
   color: #323639;
 }
 :local(.content strong){ 
-  width: 100;
   text-align: left;
   font-size: 25px;
+  color: #323639;
+}
+:local(.textContent){ 
+  text-align: justify;
+  font-size: 17px;
   color: #323639;
 }
 :local(.content a){
@@ -159,17 +162,25 @@ li {
   color: #323639;
 }
 
-@media only screen and (max-width: 600px) {
-  :local(.content){ 
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    flex: content;
+@media only screen and (max-width: 768px) {
+  :local(.content){     
+    margin-left: 20px;
+    margin-right: 20px;    
   }
   :local(.contenFuture){
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     flex: content;
+  }
+  :local(.AppFoot){    
+    background-color: #f0f1f8;
+    bottom: 0;
+    position: relative;
+    height: 100px;
+    min-width: 100%;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
   }
 }
