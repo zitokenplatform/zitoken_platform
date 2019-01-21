@@ -4,6 +4,9 @@ import Grid from '@material-ui/core/Grid';
 import style from "./App.css";
 
 class App extends Component {
+  onStart = () => {
+    alert("Under development, check it out our Roadmap");
+  }
   render() {
     return (
       <div className={style.App}>
@@ -11,7 +14,7 @@ class App extends Component {
         <div className={style.AppHeader}>
           <h1 className={style.AppLogo}>Zitoken</h1>
           <p className={style.AppP}>Grow your coins playing on our game platform & Earn interest rates holding your BTC with us</p>
-          <button  className={style.AppButtom}>
+          <button  className={style.AppButtom} onClick={()=>this.onStart()}>
             START PLAYING
           </button>
         </div>
