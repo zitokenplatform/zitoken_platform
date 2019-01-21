@@ -1,0 +1,175 @@
+:local(.App) {
+  margin:0px !important;
+  padding: 0px !important;
+  border:0;
+}
+:local(.content){ 
+  margin-left: 200px;
+  margin-right: 200px;
+  flex: content;
+}
+:local(.content h1){ 
+  text-align: center;
+  font-size: 38px;
+  color: #323639;
+}
+:local(.content strong){ 
+  width: 100;
+  text-align: left;
+  font-size: 25px;
+  color: #323639;
+}
+:local(.content a){
+  font-size: 21px;
+  color: #10c4cb;
+  text-decoration:none; 
+  
+} 
+:local(.content a:hover){
+  opacity: 0.8;
+  cursor: pointer;
+} 
+:local(.textBlue){
+  font-size: 25px;
+  color: #3dafb0;
+  font-family: "Arial";
+  font-weight: bold;  
+  text-align: center;
+} 
+:local(.textSmall){
+  font-size: 14px;
+  color: #3e404c;
+  text-align: center;
+}
+:local(.AppLogo) {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: "Arial";
+}
+:local(.AppP) {
+  padding: 5px;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: "Arial";
+}
+:local(.AppButtom) {
+  background: transparent;
+  border: none;
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: bold;
+  width: 234px;
+  height: 62px;
+  border-radius: 10px;
+  background-color: #d1071e;
+  margin-bottom: 20px;
+}
+:local(.AppRodmap){
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+:local(.imgExchnange){
+  padding: 20px;
+  max-width: 350px;
+  min-width: 100px;
+  max-height: 100px;  /* Máximo da altura da imagem */
+  min-height: auto;
+}
+:local(.AppFootLink){
+  margin-top: 10px;
+  float: right;
+  margin-right: 20px;
+}
+:local(.AppFootLink a){
+  color: #323639;
+  text-decoration:none; 
+}
+:local(.AppFootLink a:hover){
+  opacity: 0.8;
+  cursor: pointer;
+}
+:local(.contenFuture){
+  margin-left: 200px;
+  margin-right: 200px;
+  flex: content;
+}
+:local(.contenFuture h1){
+  text-align: center;
+  font-size: 38px;
+  color: #323639;
+}
+:local(.contenFuture strong){
+  text-align: left;
+  font-size: 28px;
+  color: #323639;
+}
+ul {
+  list-style-image: url('/img/check.png');
+}
+li {
+  padding: 10px;
+  font-size: 24px;
+  color: #323639;
+}
+:local(.AppHeader) {
+  background-color: #00be8e;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+:local(.AppButtom:hover) {
+  opacity: 0.8;
+  cursor: pointer;
+}
+:local(.AppExchange){
+  background-color: #f0f1f8;
+  width: 100%;
+  min-height: 20vh;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+}
+:local(.AppExchange h1){
+  padding: 20px;
+  text-align: center;
+  font-size: 38px;
+  color: #323639;
+}
+:local(.AppFoot){
+  background-color: #f0f1f8;
+  bottom: 0;
+  position: relative;
+  height: 50px;
+  min-width: 100%;
+  width: 100%;
+}
+:local(.textFoot){
+  margin-left: 10px;
+  float: left;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 17px;
+  color: #323639;
+}
+
+@media only screen and (max-width: 600px) {
+  :local(.content){ 
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: content;
+  }
+  :local(.contenFuture){
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: content;
+  }
+}
