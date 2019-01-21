@@ -1,11 +1,9 @@
 :local(.App) {
-  margin:0px !important;
-  padding: 0px !important;
+  flex: content;
 }
 :local(.content){ 
   margin-left: 200px;
   margin-right: 200px;
-  flex: content;
 }
 :local(.content h1){ 
   text-align: center;
@@ -70,7 +68,6 @@
 :local(.AppRodmap){
   align-items: center;
   justify-content: center;
-  display: flex;
 }
 :local(.imgExchnange){
   padding: 20px;
@@ -167,10 +164,9 @@ li {
     margin-left: 20px;
     margin-right: 20px;    
   }
-  :local(.contenFuture){
+  :local(.contenFuture){    
     margin-left: 20px;
     margin-right: 20px;
-    flex: content;
   }
   :local(.AppFoot){    
     background-color: #f0f1f8;

@@ -8,6 +8,7 @@ class App extends Component {
     alert("Under development, check it out our Roadmap");
   }
   render() {
+    document.title = 'Zitoken- Blockchain Game Platform';
     return (
       <div className={style.App}>
         <StatusBar />
@@ -48,7 +49,7 @@ class App extends Component {
           <strong>Roadmap</strong>
           <Grid container className={style.AppRodmap} spacing={16}>
             <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2018</p><p className={style.textSmall}>First implementation</p></Grid>
-            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q1 2019</p><p className={style.textSmall}>Official Launch</p></Grid>
+            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q1 2019</p><p className={style.textSmall}>Betal Launch</p></Grid>
             <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2019</p><p className={style.textSmall}>First implementation of new games + Update</p></Grid>
             <Grid item xs={12} sm={3}><p className={style.textBlue}>Q1 2020</p><p className={style.textSmall}>Second implementation of new games + Update</p></Grid>
             <Grid item xs={12} sm={3}><p className={style.textBlue}>Q4 2020</p><p className={style.textSmall}>Third implementation  of new games + Update</p></Grid>
@@ -57,7 +58,7 @@ class App extends Component {
 
         <div className={style.AppExchange}>
           <h1>Exchanges</h1>
-          <Grid container className={style.AppRodmap}>
+          <Grid container className={style.AppRodmap} alignItems="center">
             <Grid item><a href="https://forkdelta.app/#!/trade/0x9c04f0dc68c61efd2fc289987393a78b4a2494ea-ETH" target="_blank"><img src="/img/forkDex.png" className={style.imgExchnange} /></a></Grid>
             <Grid item><a href="https://tokendex.github.io/#!/trade/0x9c04f0dc68c61efd2fc289987393a78b4a2494ea-ETH" target="_blank"><img src="/img/tokenDex.png" className={style.imgExchnange} /></a></Grid>
           </Grid>
