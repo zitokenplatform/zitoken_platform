@@ -48,8 +48,8 @@ class App extends Component {
           </p>
           <strong>Roadmap</strong>
           <Grid container className={style.AppRodmap} spacing={16}>
-            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2018</p><p className={style.textSmall}>First implementation</p></Grid>
-            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q1 2019</p><p className={style.textSmall}>Betal Launch</p></Grid>
+            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2018</p><p className={style.textSmall}>Core Development</p></Grid>
+            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q1 2019</p><p className={style.textSmall}>Beta Launch</p></Grid>
             <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2019</p><p className={style.textSmall}>First implementation of new games + Update</p></Grid>
             <Grid item xs={12} sm={3}><p className={style.textBlue}>Q1 2020</p><p className={style.textSmall}>Second implementation of new games + Update</p></Grid>
             <Grid item xs={12} sm={3}><p className={style.textBlue}>Q4 2020</p><p className={style.textSmall}>Third implementation  of new games + Update</p></Grid>

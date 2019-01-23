@@ -1,4 +1,6 @@
 :local(.App) {
+  margin:0px !important;
+  padding: 0px !important;
   flex: content;
 }
 :local(.content){ 
@@ -178,5 +180,9 @@ li {
     text-align: center;
     justify-items: center;
     justify-content: center;
+  }
+  :local(.AppFootLink){
+    float: right;
+    margin-right: 10px;
   }
 }
