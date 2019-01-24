@@ -1,7 +1,7 @@
 :local(.App) {
   margin:0px !important;
   padding: 0px !important;
-  flex: content;
+  overflow: hidden;
 }
 :local(.content){ 
   margin-left: 200px;
