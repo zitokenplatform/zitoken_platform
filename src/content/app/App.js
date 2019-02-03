@@ -94,7 +94,7 @@ class App extends Component {
               <Grid item><a href="https://github.com/ZitokenProject">Github</a></Grid>
               <Grid item><a href="https://bitcointalk.org/index.php?topic=5101230">Bitcointalk</a></Grid>
               <Grid item><a href="https://www.twitter.com/zitoken">Twitter</a></Grid>
-              <Grid item><a href="https://discord.gg/zPWqBQ">Discord</a></Grid>
+              <Grid item><a href="https://t.me/zitoken">Telegram</a></Grid>
               <Grid item><a href="mailto:support@zitoken.me">Support</a></Grid>
             </Grid>
           </div>

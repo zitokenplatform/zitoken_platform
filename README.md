@@ -25,3 +25,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+https://hs24.name.com:2083/logout/?locale=en
