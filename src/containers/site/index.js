@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import StatusBar from '../../component/statusBar';
 import Grid from '@material-ui/core/Grid';
-import style from "./App.css";
+import style from "./style.css";
 
-class App extends Component {
+class Site extends Component {
   constructor(props){
     super(props);
   }
@@ -14,7 +13,6 @@ class App extends Component {
     document.title = 'Zitoken- Blockchain Game Platform';
     return (
       <div className={style.App}>
-        <StatusBar />
         <div className={style.AppHeader}>
           <h1 className={style.AppLogo}>Zitoken</h1>
           <p className={style.AppP}>Use ZITOKEN (ZIT) as credit to play all games on our platform</p>
@@ -104,4 +102,4 @@ class App extends Component {
   }
 }
 
-export default (App);
+export default (Site);
