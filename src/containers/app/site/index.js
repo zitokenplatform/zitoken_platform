@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import StatusBar from '../../../components/statusBar';
 
 import site from '../../site/index';
+import register from '../../register/index'
 import errorNotFound from '../../errosPages/errorNotFound';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
@@ -17,6 +18,7 @@ class App extends Component {
                 <Switch>
                     {/* INSIDE ROUTES */}
                     <Route path="/" exact={true} component={site} />
+                    <Route path="/register" exact={true} component={register} />
                   
                     {/* ERRORS PAGE */}
                     <Route path="/404" component={errorNotFound} />

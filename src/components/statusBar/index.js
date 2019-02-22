@@ -18,6 +18,10 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Drawer from '@material-ui/core/Drawer';
 
+// REDUX
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+
 import './style.css';
 const drawerWidth = 240;
 const styles = theme => ({
@@ -28,9 +32,9 @@ const styles = theme => ({
         spacing: 10,
         marginRight: 20,
         width: "100%",
-        backgroundColor: fade(theme.palette.common.white, 0),        
+        backgroundColor: fade(theme.palette.common.white, 0),
     },
-    textNavButton:{
+    textNavButton: {
         fontSize: 19,
         fontWeight: 'bold',
         '&:hover': {
@@ -40,17 +44,12 @@ const styles = theme => ({
     },
     bottomNavAtivity: {
         borderRadius: theme.shape.borderRadius,
+        fontSize: 19,
+        fontWeight: 'bold',
         color: "#00be8e",
-
-        backgroundColor: fade(theme.palette.common.white, 0.15),
+        backgroundColor: fade(theme.palette.common.white, 0.30),
         '&:hover': {
-            backgroundColor: fade(theme.palette.common.white, 0.25),
-        },
-    },
-    bottomNav: {
-        borderRadius: theme.shape.borderRadius,
-        color: "#00be8e",
-        '&:hover': {
+            color: "#00be8e",
             backgroundColor: fade(theme.palette.common.white, 0.25),
         },
     },
@@ -81,7 +80,7 @@ class StatusBar extends React.Component {
         super(props);
         this.state = {
             open: false,
-            setOpen: true,
+            setOpen: true
         };
     }
     handleDrawerOpen = () => {
@@ -97,8 +96,21 @@ class StatusBar extends React.Component {
             open: false
         });
     }
-    handleChange = (event, value) => {
-    };
+
+    handleSetPage = value => {
+        if (value === 1) {
+            window.location.href = "/#overview"
+        } else if (value === 2) {
+            window.location.href = "/#exchanges"
+        } else if (value === 3) {
+            window.location.href = "/#features"
+        } else if (value === 4) {
+            window.location.href = "/#faq"
+        } else {
+            alert("No link!");
+        }
+        this.handleDrawerClose();
+    }
 
     render() {
         const { classes, pageRoot } = this.props;
@@ -118,13 +130,13 @@ class StatusBar extends React.Component {
                                 <div className="logoText">token</div>
                             </div>
                         </Typography>
-                        <Hidden xsDown>                           
+                        <Hidden xsDown>
                             <BottomNavigation showLabels className={classes.navButtom}  >
-                                <BottomNavigationAction label="OVERVIEW" value="OVERVIEW" className={classes.textNavButton} />
-                                <BottomNavigationAction label="EXCHANGES" value="EXCHANGES" className={classes.textNavButton}/>
-                                <BottomNavigationAction label="FEATURES" value="FEATURES" className={classes.textNavButton}/>
-                                <BottomNavigationAction label="REGISTER" value="REGISTER" className={classes.textNavButton} />
-                                <BottomNavigationAction label="LOGIN" value="LOGIN" className={classes.textNavButton} />
+                                <BottomNavigationAction label="OVERVIEW" value="OVERVIEW" className={classes.textNavButton} onClick={() => this.handleSetPage(1)} />
+                                <BottomNavigationAction label="EXCHANGES" value="EXCHANGES" className={classes.textNavButton} onClick={() => this.handleSetPage(2)} />
+                                <BottomNavigationAction label="FEATURES" value="FEATURES" className={classes.textNavButton} onClick={() => this.handleSetPage(3)} />
+                                <BottomNavigationAction label="FAQ" value="FAQ" className={classes.textNavButton} onClick={() => this.handleSetPage(4)} />
+                                
                             </BottomNavigation>
                         </Hidden>
                     </Toolbar>
@@ -138,28 +150,25 @@ class StatusBar extends React.Component {
                         paper: classes.drawerPaper,
                     }}
                 >
-                
+
                     <div className={classes.drawerHeader}>
                         <IconButton onClick={this.handleDrawerClose}>
                             {<ChevronLeftIcon />}
-                        </IconButton>                        
+                        </IconButton>
                     </div>
                     <Divider />
                     <List component="nav">
-                        <ListItem button>
+                        <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(1)}>
                             <ListItemText primary="OVERVIEW" />
                         </ListItem>
-                        <ListItem button>
+                        <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(2)}>
                             <ListItemText primary="EXCHANGES" />
                         </ListItem>
                         <ListItem button>
-                            <ListItemText primary="FEATURES" />
+                            <ListItemText primary="FEATURES" className={classes.textNavButton} onClick={() => this.handleSetPage(3)} />
                         </ListItem>
                         <ListItem button>
-                            <ListItemText primary="REGISTER" />
-                        </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="LOGIN" />
+                            <ListItemText primary="FAQ" className={classes.textNavButton} onClick={() => this.handleSetPage(4)} />
                         </ListItem>
                     </List>
                 </Drawer>
@@ -170,6 +179,21 @@ class StatusBar extends React.Component {
 
 StatusBar.propTypes = {
     classes: PropTypes.object.isRequired,
+    pageRoot: PropTypes.number
 };
 
-export default withStyles(styles)(StatusBar);
+const mapSateToProps = store => ({
+    pageRoot: store.site.valuePage
+});
+
+const mapDispatchToProps = dispatch =>
+    bindActionCreators(
+        {
+        },
+        dispatch
+);
+
+export default connect(
+    mapSateToProps,
+    mapDispatchToProps
+)(withStyles(styles)(StatusBar));
