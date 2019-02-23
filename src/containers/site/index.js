@@ -38,8 +38,9 @@ class Site extends Component {
         <div className={style.content} id="overview" >
           <h1>OVERVIEW</h1>
           <strong>About Zitoken Platform</strong>
-          <p className={style.textContent}>Zitoken platform is a blockchain game platform, on which is possible to play different games such as trading games and strategy games using ZITOKEN ZIT (our utility token) , platform is
-            been designed to support a wide range of games developed on Blockchain Tecnology, initially the platform will support only games developed on Ethereum Blockchain, but gradually will support others protocols. <br /><br />
+          <p className={style.textContent}>
+          Zitoken platform is a blockchain game platform, on which is possible to play different games such as strategy games with (characters and gods) using ZITOKEN ZIT (our utility token) , platform is been designed to support a wide range of games developed on Blockchain Tecnology, initially the platform will support only games developed on Ethereum Blockchain, but gradually will support others protocols.
+          <br /><br />
             <a href="/whitepaper/Whitepaper-Zitoken.pdf">Whitepaper</a>
           </p>
           <strong>Zitoken (ZIT)</strong>
