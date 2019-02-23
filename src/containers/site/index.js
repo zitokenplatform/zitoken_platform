@@ -80,6 +80,11 @@ class Site extends Component {
           <p>Software engineer/System analyst.
              <br />https://www.linkedin.com/in/jorge-william-90586b54/
           </p>
+          <strong>DEVELOPER</strong>
+          <p>Djalma Bina, Developer Zitoken</p>
+          <p>Front-end/UX.
+             <br />https://www.linkedin.com/in/djalmabina/
+          </p>
         </div>
 
         <div className={style.AppExchange} id="exchanges">
