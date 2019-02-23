@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import style from "./style.css";
 
-class Register extends Component {
+class Login extends Component {
 
     render() {
         return (
@@ -15,21 +15,11 @@ class Register extends Component {
                             <div className={style.logoIcoLogin}>ZI</div>
                             <div className={style.logoTextLogin}>token</div>
                         </div>
-                        <Grid container >
-                            <Grid item md={12} className={style.form}>
-                            <TextField
-                                    id="filled-email-input"
-                                    label="Username"
-                                    className={style.inputText}
-                                    type="text"
-                                    name="username"
-                                    variant="filled"
-                                />                       
-                            </Grid>
+                        <Grid container >                            
                             <Grid item md={12} className={style.form}>
                                 <TextField
                                     id="filled-email-input"
-                                    label="Email"
+                                    label="E-mail"
                                     className={style.inputText}
                                     type="email"
                                     name="email"
@@ -45,22 +35,12 @@ class Register extends Component {
                                     name="password"
                                     variant="filled"
                                 />
-                            </Grid>
-                            <Grid item md={12} className={style.form}>
-                                <TextField
-                                    id="filled-email-input"
-                                    label="Repet Password"
-                                    className={style.inputText}
-                                    type="password"
-                                    name="repassword"
-                                    variant="filled"
-                                />
-                            </Grid>
-                            <h1 className={style.textLink}>Already have an account ?</h1>
+                            </Grid>                            
+                            <h1 className={style.textLink}>Forgot your password</h1>
                             <Grid item md={12}>
                                 <div className={style.buttomContent}>
                                     <Button variant="contained"  color="secondary" className={style.buttom}>
-                                        CREATE ACCOUNT
+                                        LOGIN
                                     </Button>
                                 </div>
                                 
@@ -74,4 +54,4 @@ class Register extends Component {
     }
 }
 
-export default (Register);
+export default (Login);
