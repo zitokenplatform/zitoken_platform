@@ -5,7 +5,9 @@ import Grid from '@material-ui/core/Grid';
 import style from "./style.css";
 
 class Login extends Component {
-
+    componentDidMount = () => {
+        localStorage.setItem("page", JSON.stringify(6));
+    }
     render() {
         return (
             <div className={style.root}>

@@ -24,6 +24,9 @@ class Site extends Component {
   onStart = () => {
     alert("Under development, check it out our Roadmap");
   }
+  componentDidMount = () => {
+    localStorage.setItem("page", JSON.stringify(1));
+}
   render() {
     const {classes} = this.props;
     return (

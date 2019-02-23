@@ -5,7 +5,9 @@ import Grid from '@material-ui/core/Grid';
 import style from "./style.css";
 
 class Register extends Component {
-
+    componentDidMount = () => {
+        localStorage.setItem("page", JSON.stringify(5));
+    }
     render() {
         return (
             <div className={style.root}>
@@ -56,7 +58,7 @@ class Register extends Component {
                                     variant="filled"
                                 />
                             </Grid>
-                            <h1 className={style.textLink}>Already have an account ?</h1>
+                            <h1><a href="/login" className={style.textLink}>Already have an account ?</a></h1>
                             <Grid item md={12}>
                                 <div className={style.buttomContent}>
                                     <Button variant="contained"  color="secondary" className={style.buttom}>

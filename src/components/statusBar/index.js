@@ -22,6 +22,7 @@ import Drawer from '@material-ui/core/Drawer';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
+
 import './style.css';
 const drawerWidth = 240;
 const styles = theme => ({
@@ -97,24 +98,32 @@ class StatusBar extends React.Component {
         });
     }
 
+
     handleSetPage = value => {
         if (value === 1) {
-            window.location.href = "/#overview"
+            window.location.href = "/#overview";
         } else if (value === 2) {
-            window.location.href = "/#exchanges"
+            window.location.href = "/#exchanges";
         } else if (value === 3) {
-            window.location.href = "/#features"
+            window.location.href = "/#features";
         } else if (value === 4) {
-            window.location.href = "/#faq"
+            window.location.href = "/#faq";
+        } else if (value === 5) {
+            window.location.href = "/register";
+        } else if (value === 6) {
+            window.location.href = "/login";
         } else {
             alert("No link!");
         }
+        localStorage.setItem("page", JSON.stringify(value));
         this.handleDrawerClose();
     }
+    
 
     render() {
-        const { classes, pageRoot } = this.props;
+        const { classes } = this.props;
         const { open } = this.state;
+        let pageRoot = JSON.parse(localStorage.getItem("page"));
         return (
             <div className={styles.root}>
                 <AppBar position="static" color="default">
@@ -132,11 +141,12 @@ class StatusBar extends React.Component {
                         </Typography>
                         <Hidden xsDown>
                             <BottomNavigation showLabels className={classes.navButtom}  >
-                                <BottomNavigationAction label="OVERVIEW" value="OVERVIEW" className={classes.textNavButton} onClick={() => this.handleSetPage(1)} />
-                                <BottomNavigationAction label="EXCHANGES" value="EXCHANGES" className={classes.textNavButton} onClick={() => this.handleSetPage(2)} />
-                                <BottomNavigationAction label="FEATURES" value="FEATURES" className={classes.textNavButton} onClick={() => this.handleSetPage(3)} />
-                                <BottomNavigationAction label="FAQ" value="FAQ" className={classes.textNavButton} onClick={() => this.handleSetPage(4)} />
-                                
+                                <BottomNavigationAction label="OVERVIEW" value="OVERVIEW" className={pageRoot === 1 ? classes.bottomNavAtivity : classes.textNavButton} onClick={() => this.handleSetPage(1)} />
+                                <BottomNavigationAction label="EXCHANGES" value="EXCHANGES" className={pageRoot === 2 ? classes.bottomNavAtivity : classes.textNavButton} onClick={() => this.handleSetPage(2)} />
+                                <BottomNavigationAction label="FEATURES" value="FEATURES" className={pageRoot === 3 ? classes.bottomNavAtivity : classes.textNavButton} onClick={() => this.handleSetPage(3)} />
+                                <BottomNavigationAction label="FAQ" value="FAQ" className={pageRoot === 4 ? classes.bottomNavAtivity : classes.textNavButton} onClick={() => this.handleSetPage(4)} />
+                                <BottomNavigationAction label="REGISTER" value="REGISTER" className={pageRoot === 5 ? classes.bottomNavAtivity : classes.textNavButton} onClick={() => this.handleSetPage(5)} />
+                                <BottomNavigationAction label="LOGIN" value="LOGIN" className={pageRoot === 6 ? classes.bottomNavAtivity : classes.textNavButton} onClick={() => this.handleSetPage(6)} />
                             </BottomNavigation>
                         </Hidden>
                     </Toolbar>
@@ -158,17 +168,23 @@ class StatusBar extends React.Component {
                     </div>
                     <Divider />
                     <List component="nav">
-                        <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(1)}>
+                        <ListItem button className={classes.textNavButton} selected={pageRoot===1} onClick={() => this.handleSetPage(1)}>
                             <ListItemText primary="OVERVIEW" />
                         </ListItem>
-                        <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(2)}>
+                        <ListItem button className={classes.textNavButton} selected={pageRoot===2} onClick={() => this.handleSetPage(2)}>
                             <ListItemText primary="EXCHANGES" />
                         </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="FEATURES" className={classes.textNavButton} onClick={() => this.handleSetPage(3)} />
+                        <ListItem button className={classes.textNavButton} selected={pageRoot===3} onClick={() => this.handleSetPage(3)}>
+                            <ListItemText primary="FEATURES"  />
                         </ListItem>
-                        <ListItem button>
-                            <ListItemText primary="FAQ" className={classes.textNavButton} onClick={() => this.handleSetPage(4)} />
+                        <ListItem button className={classes.textNavButton} selected={pageRoot===4} onClick={() => this.handleSetPage(4)} >
+                            <ListItemText primary="FAQ" />
+                        </ListItem>
+                        <ListItem button className={classes.textNavButton} selected={pageRoot===5} onClick={() => this.handleSetPage(5)}>
+                            <ListItemText primary="REGISTER"  />
+                        </ListItem>
+                        <ListItem button className={classes.textNavButton} selected={pageRoot===6} onClick={() => this.handleSetPage(6)}>
+                            <ListItemText primary="LOGIN"  />
                         </ListItem>
                     </List>
                 </Drawer>
@@ -179,11 +195,10 @@ class StatusBar extends React.Component {
 
 StatusBar.propTypes = {
     classes: PropTypes.object.isRequired,
-    pageRoot: PropTypes.number
+
 };
 
 const mapSateToProps = store => ({
-    pageRoot: store.site.valuePage
 });
 
 const mapDispatchToProps = dispatch =>
@@ -191,7 +206,7 @@ const mapDispatchToProps = dispatch =>
         {
         },
         dispatch
-);
+    );
 
 export default connect(
     mapSateToProps,
