@@ -8,7 +8,6 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
 const styles = theme => ({
   heading: {
     fontSize: theme.typography.pxToRem(15),
@@ -18,9 +17,7 @@ const styles = theme => ({
 });
 
 class Site extends Component {
-  constructor(props) {
-    super(props);
-  }
+  
   onStart = () => {
     alert("Under development, check it out our Roadmap");
   }
@@ -30,7 +27,7 @@ class Site extends Component {
   render() {
     const {classes} = this.props;
     return (
-      <div className={style.App}>
+      <div className={style.App}>        
         <div className={style.AppHeader}>
           <h1 className={style.AppLogo}>Zitoken</h1>
           <p className={style.AppP}>Use ZITOKEN (ZIT) as credit to play all games on our platform</p>
@@ -94,8 +91,8 @@ class Site extends Component {
         <div className={style.AppExchange} id="exchanges">
           <h1>Exchanges</h1>
           <Grid container className={style.AppRodmap} alignItems="center">
-            <Grid item><a href="https://forkdelta.app/#!/trade/0x9c04f0dc68c61efd2fc289987393a78b4a2494ea-ETH" target="_blank"><img src="/img/forkDex.png" className={style.imgExchnange} /></a></Grid>
-            <Grid item><a href="https://tokendex.github.io/#!/trade/0x9c04f0dc68c61efd2fc289987393a78b4a2494ea-ETH" target="_blank"><img src="/img/tokenDex.png" className={style.imgExchnange} /></a></Grid>
+            <Grid item><a href="https://forkdelta.app/#!/trade/0x9c04f0dc68c61efd2fc289987393a78b4a2494ea-ETH" ><img src="/img/forkDex.png" className={style.imgExchnange} alt="forDex" /></a></Grid>
+            <Grid item><a href="https://tokendex.github.io/#!/trade/0x9c04f0dc68c61efd2fc289987393a78b4a2494ea-ETH"><img src="/img/tokenDex.png" className={style.imgExchnange} alt="tokenDex" /></a></Grid>
           </Grid>
         </div>
         <div className={style.contenFaq} id="faq">

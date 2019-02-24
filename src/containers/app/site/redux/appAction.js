@@ -1,7 +1,9 @@
-export const setPage = page => ({
-    type: "SET_PAGE",
-    page
+
+export const getAlert = () => ({
+    type: "GET_ALERT",
 });
-export const getPage = () => ({
-    type: "GET_PAGE"
+
+export const clearAlert = () => ({
+    type: "CLEAR_ALERT",
 });
+

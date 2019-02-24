@@ -1,11 +1,11 @@
 import { takeLatest } from 'redux-saga'
 import { fork } from "redux-saga/effects";
-import { setPageSaga, getPageSaga } from '../site/redux/appSaga';
+import { clearAlertSaga,getAlertSaga } from '../site/redux/appSaga';
 export default function* rootSaga() {
     yield [
      
-     fork(takeLatest, "SET_PAGE", setPageSaga),
-     fork(takeLatest, "GET_PAGE", getPageSaga),
+     fork(takeLatest, "GET_ALERT", getAlertSaga),
+     fork(takeLatest, "CLEAR_ALERT", clearAlertSaga),
      
     ];
 }

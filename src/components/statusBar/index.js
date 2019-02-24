@@ -22,7 +22,6 @@ import Drawer from '@material-ui/core/Drawer';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-
 import './style.css';
 const drawerWidth = 240;
 const styles = theme => ({
@@ -100,6 +99,7 @@ class StatusBar extends React.Component {
 
 
     handleSetPage = value => {
+             
         if (value === 1) {
             window.location.href = "/#overview";
         } else if (value === 2) {
@@ -115,8 +115,9 @@ class StatusBar extends React.Component {
         } else {
             alert("No link!");
         }
-        localStorage.setItem("page", JSON.stringify(value));
+        localStorage.setItem("page", JSON.stringify(value));        
         this.handleDrawerClose();
+    
     }
     
 
@@ -199,6 +200,7 @@ StatusBar.propTypes = {
 };
 
 const mapSateToProps = store => ({
+    
 });
 
 const mapDispatchToProps = dispatch =>
