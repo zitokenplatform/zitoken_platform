@@ -22,7 +22,7 @@ import Drawer from '@material-ui/core/Drawer';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-import './style.css';
+import style from './style.css';
 const drawerWidth = 240;
 const styles = theme => ({
     root: {
@@ -99,29 +99,32 @@ class StatusBar extends React.Component {
 
 
     handleSetPage = value => {
-             
-        if (value === 1) {
-            window.location.href = "/#overview";
-        } else if (value === 2) {
-            window.location.href = "/#exchanges";
-        } else if (value === 3) {
-            window.location.href = "/#features";
-        } else if (value === 4) {
-            window.location.href = "/#faq";
-        } else if (value === 5) {
-            window.location.href = "/register";
-        } else if (value === 6) {
-            window.location.href = "/login";
-        } else {
-            alert("No link!");
-        }
+        const { menuLogin } = this.props;
+        if(menuLogin){
+
+        }else{
+            if (value === 1) {
+                window.location.href = "/#overview";
+            } else if (value === 2) {
+                window.location.href = "/#exchanges";
+            } else if (value === 3) {
+                window.location.href = "/#features";
+            } else if (value === 4) {
+                window.location.href = "/#faq";
+            } else if (value === 5) {
+                window.location.href = "/register";
+            } else if (value === 6) {
+                window.location.href = "/login";
+            } else {
+                alert("No link!");
+            }
+        }     
+        
         localStorage.setItem("page", JSON.stringify(value));        
         this.handleDrawerClose();
     
     }
-    
-
-    render() {
+    renderMenuLogin = () =>{
         const { classes } = this.props;
         const { open } = this.state;
         let pageRoot = JSON.parse(localStorage.getItem("page"));
@@ -135,9 +138,79 @@ class StatusBar extends React.Component {
                             </IconButton>
                         </Hidden>
                         <Typography variant="h6" color="inherit">
-                            <div className="logo">
-                                <div className="logoIco">ZI</div>
-                                <div className="logoText">token</div>
+                            <div className={style.logo}>
+                                <div className={style.logoIco}>ZI</div>
+                                <div className={style.logoText}>token</div>
+                            </div>
+                        </Typography>
+                        <Hidden xsDown>
+                            <BottomNavigation showLabels className={classes.navButtom}  >
+                                <BottomNavigationAction label="GAMES" value="GAMES" className={pageRoot === 1 ? classes.bottomNavAtivity : classes.textNavButton} onClick={() => this.handleSetPage(1)} />
+                                <BottomNavigationAction label="EARN ZIT" value="EARN ZIT" className={pageRoot === 2 ? classes.bottomNavAtivity : classes.textNavButton} onClick={() => this.handleSetPage(2)} />
+                                <BottomNavigationAction label="BUY ZIT" value="BUY ZIT" className={pageRoot === 3 ? classes.bottomNavAtivity : classes.textNavButton} onClick={() => this.handleSetPage(3)} />                                
+                            </BottomNavigation>
+                        </Hidden>
+                        <div className={style.navRight}>
+                            <div className={style.textBalance}>BALANCE 198 ZIT
+                            <IconButton onClick={this.handleDrawerClose}>
+                                {<ChevronLeftIcon />}
+                            </IconButton>
+                            </div>
+                            
+                        </div>
+                    </Toolbar>
+                </AppBar>
+                <Drawer
+                    className={classes.drawer}
+                    variant="persistent"
+                    anchor="left"
+                    open={open}
+                    classes={{
+                        paper: classes.drawerPaper,
+                    }}
+                >
+
+                    <div className={classes.drawerHeader}>
+                        <IconButton onClick={this.handleDrawerClose}>
+                            {<ChevronLeftIcon />}
+                        </IconButton>
+                    </div>
+                    <Divider />
+                    <List component="nav">
+                        <ListItem button className={classes.textNavButton} selected={pageRoot===1} onClick={() => this.handleSetPage(1)}>
+                            <ListItemText primary="GAMES" />
+                        </ListItem>
+                        <ListItem button className={classes.textNavButton} selected={pageRoot===2} onClick={() => this.handleSetPage(2)}>
+                            <ListItemText primary="EARN ZIT" />
+                        </ListItem>
+                        <ListItem button className={classes.textNavButton} selected={pageRoot===3} onClick={() => this.handleSetPage(3)}>
+                            <ListItemText primary="BUY ZIT"  />
+                        </ListItem>   
+                        <ListItem button  onClick={() => this.handleSetPage(4)}>
+                            <ListItemText primary="LOGOUT"  />
+                        </ListItem>                      
+                    </List>
+                </Drawer>
+            </div>
+        );
+    }
+    renderMenuSite =() =>{
+        const { classes } = this.props;
+        const { open } = this.state;
+        let pageRoot = JSON.parse(localStorage.getItem("page"));
+        return (
+            <div className={styles.root}>
+                <AppBar position="static" color="default">
+                    <Toolbar disableGutters={!open}>
+                        <Hidden smUp>
+                            <IconButton className={classNames(classes.menuButton, open && classes.hide)} color="inherit" onClick={this.handleDrawerOpen} aria-label="Open drawer">
+                                <MenuIcon />
+                            </IconButton>
+                        </Hidden>
+                        <Typography variant="h6" color="inherit">
+                            <div className={style.logo}>
+                                <div className={style.logoIco}>ZI</div>
+                                <div className={style.logoText}>token</div>
                             </div>
                         </Typography>
                         <Hidden xsDown>
@@ -192,10 +265,18 @@ class StatusBar extends React.Component {
             </div>
         );
     }
+
+    render() {
+        const { menuLogin } = this.props;
+        return (
+            menuLogin?this.renderMenuLogin():this.renderMenuSite()
+        );
+    }
 }
 
 StatusBar.propTypes = {
     classes: PropTypes.object.isRequired,
+    menuLogin: PropTypes.bool
 
 };
 

@@ -1,11 +1,10 @@
-// REDUX
+
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import StatusBar from '../../../components/statusBar';
 
-import site from '../../site/index';
-import register from '../../register/index';
-import login from '../../login/index';
+import game from '../../game/index';
+
 import errorNotFound from '../../errosPages/errorNotFound';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import AlertToast from '../../../components/alertToast/index';
@@ -13,20 +12,18 @@ import AlertToast from '../../../components/alertToast/index';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-class App extends Component {
+class Platform extends Component {
     
     render() {
         const {messenger} = this.props;
         return (
             <Router>
                 <div>
-                    <StatusBar />
+                    <StatusBar menuLogin />
                     {messenger.active?<AlertToast  type={messenger.type} messenger={messenger.messenger}/>:null}
                     <Switch>
                         {/* INSIDE ROUTES */}
-                        <Route path="/" exact={true} component={site} />
-                        <Route path="/register" exact={true} component={register} />
-                        <Route path="/login" exact={true} component={login} />
+                        <Route path="/" exact={true} component={game} />                    
 
                         {/* ERRORS PAGE */}
                         <Route path="/404" component={errorNotFound} />
@@ -39,13 +36,13 @@ class App extends Component {
     }
 }
 
-App.propTypes = {
+Platform.propTypes = {
     messenger :PropTypes.object,
 
 };
 
 const mapSateToProps = store => ({
-    messenger: store.site.msn,
+    messenger: store.plaform.msn,
 
 });
 
@@ -59,4 +56,4 @@ const mapDispatchToProps = dispatch =>
 export default connect(
     mapSateToProps,
     mapDispatchToProps
-)(App);
+)(Platform);

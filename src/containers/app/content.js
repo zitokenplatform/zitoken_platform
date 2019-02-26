@@ -6,6 +6,8 @@ import { bindActionCreators } from "redux";
 
 import App from "./site/index";
 
+import Platform from "./plaform/index";
+
 import PropTypes from "prop-types";
 
 class Content extends Component {
@@ -20,9 +22,13 @@ class Content extends Component {
         this.setState({ content, type });
     }
     renderContent = () => {
+        const { user } = this.props;
+
         try {
-          
-            return this.changeContent(<App />, "site");         
+            if(user.token === undefined)
+              return this.changeContent(<App />, "site");      
+            else
+              return this.changeContent(<Platform />, "platform");  
         
         } catch (error) {
         }
@@ -40,6 +46,7 @@ Content.propTypes = {
   user : PropTypes.object,
 };
 const mapSateToProps = store => ({
+  user: store.plaform.user
 });
 
 const mapDispatchToProps = dispatch =>

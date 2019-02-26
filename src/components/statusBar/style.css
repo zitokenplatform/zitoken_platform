@@ -1,11 +1,11 @@
-.logo{
+:local(.logo){
     width: 180px;
     padding: 10px;
     display: flex;
     justify-items: center;
     justify-content: center;
 }
-.logoIco{
+:local(.logoIco){
     width: 46px;
     height: 46px;
     border-radius: 10px;
@@ -17,7 +17,7 @@
     font-weight: bold;
     float: left;
 }
-.logoText{
+:local(.logoText){
     font-size: 30px;
     height: 46px;    
     color: #d1071e;
@@ -26,7 +26,13 @@
     float: left;
     margin-left: 10px;
 }
-.navRight{
+:local(.navRight){
     float: right;
-    color: #00be8e;
+}
+:local(.textBalance){
+    font-size: 17px;
+    width: 300px;
+    color: #170e68;
+    font-family: "Arial";
+    font-weight: bold;
 }
