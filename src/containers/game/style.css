@@ -1,0 +1,127 @@
+:local(.root) {
+  margin: 0 !important;
+  overflow: hidden;
+  background-color: #ebebeb;
+  padding: 10px;
+  height:100vh;
+    display: flex;
+    flex-direction: column;
+  
+}
+:local(.content){
+  background-color: #ebebeb;
+  box-shadow:  0 0 1em rgba(50, 50, 50, 0.77), 0 0 1em #ebebeb;      
+  border: 0.5px;
+  width: 700px;
+  padding: 10px;
+  min-width: 50px;
+  margin: 0 auto;  
+}
+:local(.boxLogin){
+  background-color: #d3d3d3;
+  margin: 0 auto;  
+  width: 450px;
+  min-width: 50px;
+  min-height: 250px;
+}
+:local(.logoLogin){
+  width: 180px;
+  padding: 10px;
+  margin: 0 auto;  
+  justify-items: center;
+  justify-content: center;
+}
+:local(.logoIcoLogin){
+  width: 46px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #00be8e;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Arial";
+  font-weight: bold;
+  float: left;
+  margin-bottom: 50px;
+}
+:local(.logoTextLogin){
+  font-size: 30px;
+  color: #d1071e;
+  font-family: "Arial";
+  font-weight: bold;
+  float: left;
+  margin-left: 10px;
+}
+:local(.textAccount){
+  margin-top: 30px;
+  font-size: 15px;
+  color: #1d4459;
+  font-family: "Arial";
+  font-weight: bold;
+  text-align: center;
+}
+:local(.textLink){
+  padding: 20px;
+  font-size: 15px;
+  color: #0d96b3;
+  cursor: pointer;
+  font-family: "Arial";
+  font-weight: bold;
+  text-align: center;
+}
+
+:local(.inputText){
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+:local(.form){
+  padding: 10px;  
+  justify-items: center;
+  justify-content: center;
+}
+:local(.buttomContent){
+  width: 80%;
+  margin: 0 auto;  
+  padding: 30px;  
+  justify-items: center;
+  justify-content: center;
+
+}
+:local(.buttom){
+  width: 350px;
+}
+@media only screen and (max-width: 768px) {
+  :local(.content){
+    background-color: #ebebeb;
+    box-shadow:  0 0 1em rgba(50, 50, 50, 0.77), 0 0 1em #ebebeb;      
+    border: 0.5px;
+    width: auto;
+    padding: 10px;
+    min-width: 50px;
+    margin: 0 auto;  
+  }
+  :local(.boxLogin){
+    background-color: #d3d3d3;
+    margin: 0 auto;  
+    width: 300px;
+    min-width: 50px;
+    min-height: 250px;
+  }
+  :local(.inputText){
+    width: 280px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  :local(.buttomContent){
+    width: 80%;
+    margin: 0 auto;  
+    padding: 10px;  
+    justify-items: center;
+    justify-content: center;
+  
+  }
+  :local(.buttom){
+    width: 250px;
+  }
+}
