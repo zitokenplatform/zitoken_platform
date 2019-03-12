@@ -146,7 +146,7 @@ class Site extends Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-              We pay 25% of the total revenue generated with every game. This payment is credited in the last day of the month to game developers.
+              We pay 40% of the total revenue generated with every game. This payment is credited in the last day of the month to game developers.
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
