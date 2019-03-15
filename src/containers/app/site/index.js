@@ -4,8 +4,13 @@ import PropTypes from 'prop-types';
 import StatusBar from '../../../components/statusBar';
 
 import site from '../../site/index';
+
 import register from '../../register/index';
 import login from '../../login/index';
+import games from '../../games/index';
+import earn from '../../earn/index';
+import buy from '../../buy/index';
+
 import errorNotFound from '../../errosPages/errorNotFound';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import AlertToast from '../../../components/alertToast/index';
@@ -27,6 +32,9 @@ class App extends Component {
                         <Route path="/" exact={true} component={site} />
                         <Route path="/register" exact={true} component={register} />
                         <Route path="/login" exact={true} component={login} />
+                        <Route path="/games" exact={true} component={games} />
+                        <Route path="/earn" exact={true} component={earn} />
+                        <Route path="/buy" exact={true} component={buy} />
 
                         {/* ERRORS PAGE */}
                         <Route path="/404" component={errorNotFound} />
