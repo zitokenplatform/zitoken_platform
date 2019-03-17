@@ -2,9 +2,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import StatusBar from '../../../components/statusBar';
-
-import game from '../../game/index';
-
 import errorNotFound from '../../errosPages/errorNotFound';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import AlertToast from '../../../components/alertToast/index';
@@ -22,8 +19,6 @@ class Platform extends Component {
                     <StatusBar menuLogin />
                     {messenger.active?<AlertToast  type={messenger.type} messenger={messenger.messenger}/>:null}
                     <Switch>
-                        {/* INSIDE ROUTES */}
-                        <Route path="/" exact={true} component={game} />                    
 
                         {/* ERRORS PAGE */}
                         <Route path="/404" component={errorNotFound} />
