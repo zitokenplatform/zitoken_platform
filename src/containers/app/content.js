@@ -25,7 +25,7 @@ class Content extends Component {
         const { user } = this.props;
 
         try {
-            if(user.token === undefined)
+            if(user.token !== undefined)
               return this.changeContent(<App />, "site");      
             else
               return this.changeContent(<Platform />, "platform");  

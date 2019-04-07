@@ -6,6 +6,7 @@ import StatusBar from '../../../components/statusBar';
 import site from '../../site/index';
 import register from '../../register/index';
 import login from '../../login/index';
+import recovery from '../../recoveryAccount/index';
 import errorNotFound from '../../errosPages/errorNotFound';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import AlertToast from '../../../components/alertToast/index';
@@ -27,6 +28,7 @@ class App extends Component {
                         <Route path="/" exact={true} component={site} />
                         <Route path="/register" exact={true} component={register} />
                         <Route path="/login" exact={true} component={login} />
+                        <Route path="/recovery" exact={true} component={recovery} />
 
                         {/* ERRORS PAGE */}
                         <Route path="/404" component={errorNotFound} />

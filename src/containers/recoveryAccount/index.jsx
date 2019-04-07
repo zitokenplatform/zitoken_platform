@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import style from "./style.css";
 
-class Login extends Component {
+class RecoveryAccount extends Component {
     componentDidMount = () => {
         localStorage.setItem("page", JSON.stringify(6));
     }
@@ -27,25 +27,14 @@ class Login extends Component {
                                     name="email"
                                     variant="filled"
                                 />
-                            </Grid>
-                            <Grid item md={12} className={style.form}>
-                                <TextField
-                                    id="filled-email-input"
-                                    label="Password"
-                                    className={style.inputText}
-                                    type="password"
-                                    name="password"
-                                    variant="filled"
-                                />
-                            </Grid>                            
-                            <h1 className={style.textLink}>Forgot your password</h1>
+                            </Grid>                                            
+                            <h1><a href="/login" className={style.textLink}>Back login</a></h1>
                             <Grid item md={12}>
                                 <div className={style.buttomContent}>
                                     <Button variant="contained"  color="secondary" className={style.buttom}>
-                                        LOGIN
+                                        Recovery my password
                                     </Button>
-                                </div>
-                                
+                                </div>                                
                             </Grid>
                         </Grid>
                     </div>
@@ -56,4 +45,4 @@ class Login extends Component {
     }
 }
 
-export default (Login);
+export default (RecoveryAccount);

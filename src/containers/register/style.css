@@ -67,6 +67,7 @@
   font-family: "Arial";
   font-weight: bold;
   text-align: center;
+  text-decoration:none; 
 }
 
 :local(.inputText){
