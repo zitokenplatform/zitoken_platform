@@ -169,13 +169,13 @@ class Site extends Component {
           <h1>FEATURES</h1><br />
           <ul>
             <li>
-                Use ZITOKEN (ZIT) as credit to support all games on our platform
+                Use ZITOKEN (ZIT) as credit to support all games on our platform
             </li>
             <li>
-                Earn rewards to support the development of specific games.
+                Earn rewards to support the development of specific games.
             </li>
             <li>
-                Earn free ZIT on our bounties and airdrops.
+                Earn free ZIT on our bounties and airdrops.
             </li>
           </ul>
         </div>
