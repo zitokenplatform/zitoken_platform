@@ -29,7 +29,7 @@ class Site extends Component {
     return (
       <div className={style.App}>
         <div className={style.AppHeader}>
-          <h1 className={style.AppLogo}>Blockchain Game Crowdfunding</h1>
+          <h1 className={style.AppLogo}>Crowdfunding for blockchain games</h1>
           <p className={style.AppP}>Use ZITOKEN (ZIT) as credit to support  the development of  amazing games on our platform</p>
           <button className={style.AppButtom} onClick={() => this.onStart()}>
             CREATE  CAMPAIGN
@@ -39,12 +39,12 @@ class Site extends Component {
           <h1>OVERVIEW</h1>
           <strong>About Zitoken Platform</strong>
           <p className={style.textContent}>
-            Zitoken platform is a blockchain game crowdfunding, on which is possible to fund the development of different games such as strategy games with (characters and gods) using ZITOKEN ZIT as credit. Platform is been designed to support a wide range of games developed on Blockchain Technology.
-            Initially the platform will accept only ZIT as payment method and soon we will be considering new payment methods to contribute.
+            Zitoken platform is a crowdfunding for blockchain games, on which is possible to fund the development of different games such as strategy games with (characters and gods) using ZITOKEN ZIT as credit. Platform is been designed to support a wide range of games developed on Blockchain Technology.
+            Initially the platform will accept only ZIT and BTC as payment method and soon we will be considering new payment methods to contribute.
             <br /><br />
             <a href="/whitepaper/Whitepaper-Zitoken.pdf">Whitepaper</a>
           </p>
-          <strong>Zitoken (ZIT)</strong>
+          <strong>ZITOKEN (ZIT)</strong>
           <p className={style.textContent}>ZITOKEN (ZIT)  is our utility token and fuel on our platform, community/users can use it to fund the development of games and to participate
             at our official events. ZITOKEN (ZIT) is already available to buy on couple of exchanges and soon we plan to add  our utility token on more exchanges.
           </p>
@@ -104,7 +104,7 @@ class Site extends Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-                Zitoken platform is a blockchain game crowdfunding, on which is possible to fund the development of different games such as strategy games with
+                Zitoken platform is a crowdfunding for blockchain games, on which is possible to fund the development of different games such as strategy games with
                 (characters and gods) using ZITOKEN ZIT (our utility token) as credit.
                 Platform is been designed to support a wide range of games developed on Blockchain Technology.
               </Typography>
@@ -112,11 +112,11 @@ class Site extends Component {
           </ExpansionPanel>
           <ExpansionPanel>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography className={classes.heading}>Will ZITOKEN Platform support different blockchain protocols?</Typography>
+              <Typography className={classes.heading}>Will ZITOKEN Platform accept different blockchain protocols?</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-              Yes. Platform will support different blockchain protocols.
+              Yes. Platform will accept different blockchain protocols.
           </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
