@@ -106,6 +106,8 @@ class StatusBar extends React.Component {
             window.location.href = "/#features"
         } else if (value === 4) {
             window.location.href = "/#faq"
+        } else if (value === 5) {
+            window.location.href = "/#login"
         } else {
             alert("No link!");
         }
@@ -136,7 +138,7 @@ class StatusBar extends React.Component {
                                 <BottomNavigationAction label="EXCHANGES" value="EXCHANGES" className={classes.textNavButton} onClick={() => this.handleSetPage(2)} />
                                 <BottomNavigationAction label="FEATURES" value="FEATURES" className={classes.textNavButton} onClick={() => this.handleSetPage(3)} />
                                 <BottomNavigationAction label="FAQ" value="FAQ" className={classes.textNavButton} onClick={() => this.handleSetPage(4)} />
-                                
+                                <BottomNavigationAction label="LOGIN" value="LOGIN" className={classes.textNavButton} onClick={() => this.handleSetPage(4)} />
                             </BottomNavigation>
                         </Hidden>
                     </Toolbar>
@@ -169,6 +171,9 @@ class StatusBar extends React.Component {
                         </ListItem>
                         <ListItem button>
                             <ListItemText primary="FAQ" className={classes.textNavButton} onClick={() => this.handleSetPage(4)} />
+                        </ListItem>
+                        <ListItem button>
+                            <ListItemText primary="LOGIN" className={classes.textNavButton} onClick={() => this.handleSetPage(4)} />
                         </ListItem>
                     </List>
                 </Drawer>
