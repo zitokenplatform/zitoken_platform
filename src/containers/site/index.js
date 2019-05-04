@@ -39,7 +39,7 @@ class Site extends Component {
           <h1>OVERVIEW</h1>
           <strong>About Zitoken Platform</strong>
           <p className={style.textContent}>
-            Zitoken platform is a crowdfunding for blockchain games, on which is possible to fund the development of different games such as strategy games with (characters and gods) using ZITOKEN ZIT as credit. Platform is been designed to support a wide range of games developed on Blockchain Technology.
+            Zitoken platform is a crowdfunding for blockchain games, on which is possible to fund the development of different games such as strategy games with (characters and gods) using ZITOKEN ZIT as credit, Bitcoin option is available to contribute as well. Platform is been designed to support a wide range of games developed on Blockchain Technology.
             Initially the platform will accept only ZIT and BTC as payment method and soon we will be considering new payment methods to contribute.
             <br /><br />
             <a href="/whitepaper/Whitepaper-Zitoken.pdf">Whitepaper</a>
