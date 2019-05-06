@@ -30,7 +30,7 @@ class Site extends Component {
       <div className={style.App}>
         <div className={style.AppHeader}>
           <h1 className={style.AppLogo}>Crowdfunding for blockchain games</h1>
-          <p className={style.AppP}>Use ZITOKEN (ZIT) as credit to support  the development of  amazing games on our platform</p>
+          <p className={style.AppP}>Use Bitcoin and ZITOKEN (ZIT) as credit to support  the development of  amazing games</p>
           <button className={style.AppButtom} onClick={() => this.onStart()}>
             CREATE  CAMPAIGN
           </button>
@@ -143,12 +143,12 @@ class Site extends Component {
           <ExpansionPanel>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={classes.heading}>
-                  Will game developers receive any amount raised on our platform even if not reach the goal ?
+                  Will game developers receive any amount raised on our platform even if not reach the goal ? Is AML/KYC mandatory to reiceive their funds ?
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-                  Yes. Developers will receive their funds even if not reach the goal.
+                  Yes. Developers will receive their funds even if not reach the goal. AML/KYC compliance is mandatory otherwise the funds will be blocked and returned to backers.
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
