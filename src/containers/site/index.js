@@ -35,6 +35,8 @@ class Site extends Component {
             CREATE  CAMPAIGN
           </button>
         </div>
+        <div className={style.content} id="explore games" >
+        <h1>EXPLORE GAMES</h1>  
         <div className={style.content} id="overview" >
           <h1>OVERVIEW</h1>
           <strong>About Zitoken Platform</strong>
