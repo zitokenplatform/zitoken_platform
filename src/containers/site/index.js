@@ -36,7 +36,8 @@ class Site extends Component {
           </button>
         </div>
         <div className={style.content} id="explore games" >
-        <h1>EXPLORE GAMES</h1>  
+        <h1>EXPLORE GAMES</h1>
+        <strong>Blood & Glory</strong>
         <div className={style.content} id="overview" >
           <h1>OVERVIEW</h1>
           <strong>About Zitoken Platform</strong>
