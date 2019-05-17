@@ -106,6 +106,8 @@ class StatusBar extends React.Component {
             window.location.href = "/#features"
         } else if (value === 4) {
             window.location.href = "/#faq"
+        } else if (value === 5) {
+            alert("Under development, check it out our Roadmap");
         } else {
             alert("No link!");
         }
@@ -132,6 +134,7 @@ class StatusBar extends React.Component {
                         </Typography>
                         <Hidden xsDown>
                             <BottomNavigation showLabels className={classes.navButtom}  >
+                                <BottomNavigationAction label="EXPLORE GAMES" value="EXPLORE" className={classes.textNavButton} onClick={() => this.handleSetPage(5)} />
                                 <BottomNavigationAction label="OVERVIEW" value="OVERVIEW" className={classes.textNavButton} onClick={() => this.handleSetPage(1)} />
                                 <BottomNavigationAction label="EXCHANGES" value="EXCHANGES" className={classes.textNavButton} onClick={() => this.handleSetPage(2)} />
                                 <BottomNavigationAction label="FEATURES" value="FEATURES" className={classes.textNavButton} onClick={() => this.handleSetPage(3)} />
@@ -157,6 +160,9 @@ class StatusBar extends React.Component {
                     </div>
                     <Divider />
                     <List component="nav">
+                        <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(5)}>
+                            <ListItemText primary="EXPLORE GAMES" />
+                        </ListItem>
                         <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(1)}>
                             <ListItemText primary="OVERVIEW" />
                         </ListItem>
