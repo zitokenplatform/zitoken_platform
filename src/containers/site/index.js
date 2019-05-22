@@ -33,7 +33,7 @@ class Site extends Component {
           <p className={style.AppP}>Use Bitcoin and ZITOKEN (ZIT) as credit to support  the development of  amazing games</p>
           <button className={style.AppButtom} onClick={() => this.onStart()}>
             CREATE  CAMPAIGN
-          </button>
+          </button> 
         </div>
         <div className={style.content} id="overview" >
           <h1>OVERVIEW</h1>
