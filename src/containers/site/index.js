@@ -77,10 +77,6 @@ class Site extends Component {
             he also contributed on different other blockchain projects as consultant/growth hacker such as SID (Share Internet Data).
             <br />https://www.linkedin.com/in/leandro-alves-122665137
           </p>
-          <strong>PARTNER DEVELOPER / VOLUNTEER</strong>
-          <p>Jorge Almeida, Developer Zitoken </p>
-          <p>Software engineer/System analyst.
-             <br />https://www.linkedin.com/in/jorge-william-90586b54/
           </p>
           <strong>PARTNER DEVELOPER / VOLUNTEER</strong>
           <p>Djalma Bina, Developer Zitoken</p>
