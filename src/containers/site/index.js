@@ -75,9 +75,8 @@ class Site extends Component {
           <p>Leandro Alves, General Manager Zitoken</p>
           <p>Leandro is founder of PW7 , a blockchain engagement agency that provides Exchange Listing,
             he also contributed on different other blockchain projects as consultant/growth hacker such as SID (Share Internet Data).
-            <br />https://www.linkedin.com/in/leandro-alves-122665137
-             </p>
-        </div>
+            <br />https://www.linkedin.com/in/leandro-alves-122665137 
+            </p>
           
           <strong>PARTNER DEVELOPER / VOLUNTEER</strong>
           <p>Djalma Bina, Developer Zitoken</p>
