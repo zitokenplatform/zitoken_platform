@@ -76,11 +76,14 @@ class Site extends Component {
           <p>Leandro is founder of PW7 , a blockchain engagement agency that provides Exchange Listing,
             he also contributed on different other blockchain projects as consultant/growth hacker such as SID (Share Internet Data).
             <br />https://www.linkedin.com/in/leandro-alves-122665137 
-            </p>
+            <p>
+              </p>
           
-          <strong>PARTNER DEVELOPER / VOLUNTEER</strong>
+          <strong>PARTNER DEVELOPER</strong>
           <p>Djalma Bina, Developer Zitoken</p>
           <p>Back-end/Font-end.
+          <p> Djalma is an experienced full stack developer over 25 years working with software development and systems, 
+            has strong knowledge about C++ , Python and Machine Learning, started his career from 90's years working with C++ ANSI Standard .
              <br />https://www.linkedin.com/in/djalmabina/
           </p>
         </div>
