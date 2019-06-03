@@ -28,7 +28,7 @@ class Site extends Component {
     const {classes} = this.props;
     return (
       <div className={style.App}>
-        <div className={style.AppHeader}>
+        <div className={style.AppHeader}> 
           <h1 className={style.AppLogo}>Crowdfunding for blockchain games</h1>
           <p className={style.AppP}>Use Bitcoin and ZITOKEN (ZIT) as credit to support  the development of  amazing games</p>
           <button className={style.AppButtom} onClick={() => this.onStart()}>
