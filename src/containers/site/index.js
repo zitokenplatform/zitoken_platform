@@ -189,7 +189,6 @@ class Site extends Component {
             </Grid>
           </div>
         </div>
-      </div>
     );
   }
 }
