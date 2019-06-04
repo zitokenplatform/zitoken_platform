@@ -77,7 +77,6 @@ class Site extends Component {
             he also contributed on different other blockchain projects as consultant/growth hacker such as SID (Share Internet Data).
             <br />https://www.linkedin.com/in/leandro-alves-122665137 
             <p>
-          
           <strong>PARTNER DEVELOPER</strong>
           <p>Djalma Bina, Developer Zitoken</p>
           <p>Back-end/Font-end.
@@ -85,8 +84,6 @@ class Site extends Component {
             has strong knowledge about C++ , Python and Machine Learning, started his career from 90's years working with C++ ANSI Standard .
              <br />https://www.linkedin.com/in/djalmabina/
           <p>
-        </div>
-
         <div className={style.AppExchange} id="exchanges">
           <h1>Exchanges</h1>
           <Grid container className={style.AppRodmap} alignItems="center">
