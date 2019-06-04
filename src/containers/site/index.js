@@ -85,7 +85,7 @@ class Site extends Component {
           <p> Djalma is an experienced full stack developer over 25 years working with software development and systems, 
             has strong knowledge about C++ , Python and Machine Learning, started his career from 90's years working with C++ ANSI Standard .
              <br />https://www.linkedin.com/in/djalmabina/
-          </p>
+          <p>
         </div>
 
         <div className={style.AppExchange} id="exchanges">
