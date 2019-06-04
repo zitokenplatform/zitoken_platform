@@ -77,7 +77,6 @@ class Site extends Component {
             he also contributed on different other blockchain projects as consultant/growth hacker such as SID (Share Internet Data).
             <br />https://www.linkedin.com/in/leandro-alves-122665137 
             <p>
-              </p>
           
           <strong>PARTNER DEVELOPER</strong>
           <p>Djalma Bina, Developer Zitoken</p>
