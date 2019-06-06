@@ -13,7 +13,7 @@ const styles = theme => ({
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,
-   
+
   },
 });
 
@@ -25,15 +25,15 @@ class Site extends Component {
     alert("Under development, check it out our Roadmap");
   }
   render() {
-    const {classes} = this.props;
+    const { classes } = this.props;
     return (
       <div className={style.App}>
-        <div className={style.AppHeader}> 
+        <div className={style.AppHeader}>
           <h1 className={style.AppLogo}>Crowdfunding for blockchain games</h1>
           <p className={style.AppP}>Use Bitcoin and ZITOKEN (ZIT) as credit to support  the development of  amazing games</p>
           <button className={style.AppButtom} onClick={() => this.onStart()}>
             CREATE  CAMPAIGN
-          </button> 
+          </button>
         </div>
         <div className={style.content} id="overview" >
           <h1>OVERVIEW</h1>
@@ -75,15 +75,16 @@ class Site extends Component {
           <p>Leandro Alves, General Manager Zitoken</p>
           <p>Leandro is founder of PW7 , a blockchain engagement agency that provides Exchange Listing,
             he also contributed on different other blockchain projects as consultant/growth hacker such as SID (Share Internet Data).
-            <br />https://www.linkedin.com/in/leandro-alves-122665137 
-            <p>
+            <br />https://www.linkedin.com/in/leandro-alves-122665137
+          </p>
           <strong>PARTNER DEVELOPER</strong>
           <p>Djalma Bina, Developer Zitoken</p>
-          <p>Back-end/Font-end.
-          <p> Djalma is an experienced full stack developer over 25 years working with software development and systems, 
+          <p>Back-end/Font-end.</p>
+          <p> Djalma is an experienced full stack developer over 25 years working with software development and systems,
             has strong knowledge about C++ , Python and Machine Learning, started his career from 90's years working with C++ ANSI Standard .
              <br />https://www.linkedin.com/in/djalmabina/
-          <p>
+          </p>
+        </div>
         <div className={style.AppExchange} id="exchanges">
           <h1>Exchanges</h1>
           <Grid container className={style.AppRodmap} alignItems="center">
@@ -111,7 +112,7 @@ class Site extends Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-              Yes. Platform will accept different blockchain protocols.
+                Yes. Platform will accept different blockchain protocols.
           </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -121,7 +122,7 @@ class Site extends Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-              Yes. We are listed on ForkDelta and TokenDex, soon will be listed on more exchanges.
+                Yes. We are listed on ForkDelta and TokenDex, soon will be listed on more exchanges.
           </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -131,31 +132,31 @@ class Site extends Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-                988 million. 
+                988 million.
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
           <ExpansionPanel>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={classes.heading}>
-                  Will game developers receive any amount raised on our platform even if not reach the goal ? Is AML/KYC mandatory to reiceive their funds ?
+                Will game developers receive any amount raised on our platform even if not reach the goal ? Is AML/KYC mandatory to reiceive their funds ?
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-                  Yes. Developers will receive their funds even if not reach the goal. AML/KYC compliance is mandatory otherwise the funds will be blocked and returned to backers.
+                Yes. Developers will receive their funds even if not reach the goal. AML/KYC compliance is mandatory otherwise the funds will be blocked and returned to backers.
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
           <ExpansionPanel>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={classes.heading}>
-                  Zitoken platform takes any fee of the total raised?
+                Zitoken platform takes any fee of the total raised?
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-                  We take 10% of the total raised on our platform.
+                We take 10% of the total raised on our platform.
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -164,13 +165,13 @@ class Site extends Component {
           <h1>FEATURES</h1><br />
           <ul>
             <li>
-                Use ZITOKEN (ZIT) as credit to support all games on our platform
+              Use ZITOKEN (ZIT) as credit to support all games on our platform
             </li>
             <li>
-                Earn rewards to support the development of specific games.
+              Earn rewards to support the development of specific games.
             </li>
             <li>
-                Earn free ZIT on our bounties and airdrops.
+              Earn free ZIT on our bounties and airdrops.
             </li>
           </ul>
         </div>
@@ -189,6 +190,7 @@ class Site extends Component {
             </Grid>
           </div>
         </div>
+      </div>
     );
   }
 }
