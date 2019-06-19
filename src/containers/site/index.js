@@ -22,7 +22,7 @@ class Site extends Component {
     super(props);
   }
   onStart = () => {
-    alert("Under development, check it out our Roadmap");
+    alert("Under development, check it out our Roadmap.");
   }
   render() {
     const { classes } = this.props;
