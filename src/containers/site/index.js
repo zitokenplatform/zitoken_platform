@@ -89,7 +89,7 @@ class Site extends Component {
           <h1>Exchanges</h1>
           <Grid container className={style.AppRodmap} alignItems="center">
             <Grid item><a href="https://forkdelta.app/#!/trade/0x9c04f0dc68c61efd2fc289987393a78b4a2494ea-ETH" target="_blank"><img src="/img/forkDex.png" className={style.imgExchnange} /></a></Grid>
-            <Grid item><a href="https://0x9c04f0dc68c61efd2fc289987393a78b4a2494ea-ETH" target="_blank"><img src="/img/tokenDex.png" className={style.imgExchnange} /></a></Grid>
+            <Grid item><a href="https://exchange.zitoken.me" target="_blank"><img src="/img/tokenDex.png" className={style.imgExchnange} /></a></Grid>
           </Grid>
         </div>
         <div className={style.contenFaq} id="faq">
