@@ -177,7 +177,7 @@ class Site extends Component {
         </div>
         <div className={style.AppFoot}>
           <div className={style.textFoot}>
-            <spam>© 2019 Zitoken.me - All rights reserved</spam>
+            <spam>© 2019 Zitoken Foundation - All rights reserved</spam>
           </div>
 
           <div className={style.AppFootLink}>
