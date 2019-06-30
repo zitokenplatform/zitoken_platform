@@ -64,7 +64,7 @@ class Site extends Component {
           <strong>Roadmap</strong>
           <Grid container className={style.AppRodmap} spacing={16}>
             <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2018</p><p className={style.textSmall}>Core Development</p></Grid>
-            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q3 2019</p><p className={style.textSmall}>Beta Launch</p></Grid>
+            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q3 2019</p><p className={style.textSmall}>Launch</p></Grid>
             <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2019</p><p className={style.textSmall}>First Update to accept new game protocols </p></Grid>
             <Grid item xs={12} sm={3}><p className={style.textBlue}>Q2 2020</p><p className={style.textSmall}>Second Update to accept new game protocols </p></Grid>
             <Grid item xs={12} sm={3}><p className={style.textBlue}>Q1 2021</p><p className={style.textSmall}>Third Update to accept new game protocols </p></Grid>
@@ -177,7 +177,7 @@ class Site extends Component {
         </div>
         <div className={style.AppFoot}>
           <div className={style.textFoot}>
-            <spam>© 2019 Zi Foundation - All rights reserved</spam>
+            <spam>© 2019 Zitoken.me - All rights reserved</spam>
           </div>
 
           <div className={style.AppFootLink}>
