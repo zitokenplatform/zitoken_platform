@@ -1,8 +1,7 @@
 :local(.App) {  
   overflow: hidden;
 }
-:local(.content){ 
-  
+:local(.content){   
   margin-left: 200px;
   margin-right: 200px;
 }
@@ -77,6 +76,15 @@
   max-height: 100px;  /* Máximo da altura da imagem */
   min-height: auto;
 }
+:local(.imgExplore){
+  top: 30px;
+  width: 450px;
+  min-width: 350px;
+  max-height: 450px;  /* Máximo da altura da imagem */
+  min-height: auto;
+  margin: 0 auto;
+}
+
 :local(.AppFootLink){
   margin-top: 10px;
   float: right;
@@ -169,7 +177,89 @@ li {
   font-size: 17px;
   color: #323639;
 }
-
+:local(.textGameTypeCenter){
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  font-size: 14px;
+  width: 100%;
+  color: #6a6b6d;
+  text-align: center;
+  font-weight: bold;
+}
+:local(.textGameTypeLeft){
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  width: 100%;
+  color: #6a6b6d;
+  font-weight: bold;
+}
+:local(.textGameTypeRiight){
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: right;
+  font-size: 14px;
+  width: 100%;
+  color: #6a6b6d;
+  font-weight: bold;
+}
+:local(.textGameToBeBlack){
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  width: 100%;
+  color: #323639;
+  font-weight: bold;
+}
+:local(.textGameToBe){
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  width: 100%;
+  color: #323639;
+}
+:local(.btExploreGame) {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #d1071e;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+:local(.pinIcon) {
+  font-size: 0.5em;
+}
+:local(.textPinIcon) {
+  font-size: 18px;
+  width: 100%;
+  color: #6a6b6d;
+  margin-top: 1px;
+  margin-left: 10px;
+}
+:local(.contentIcon) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-items: center;
+  justify-content: center;
+}
+:local(.progressBar) {
+  width: 430px;
+  min-width: 350px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+:local(.contentButtom) {
+  margin-left: 25%;
+}
 @media only screen and (max-width: 768px) {
   :local(.content){     
     margin-left: 20px;
@@ -199,4 +289,35 @@ li {
     margin-right: 10px;
     flex: content;
   }
+  :local(.textGameTypeCenter){
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+    width: 100%;
+    color: #6a6b6d;
+    text-align: center;
+    font-weight: bold;
+  }
+  :local(.textGameTypeLeft){
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+    color: #6a6b6d;
+    font-weight: bold;
+  }
+  :local(.textGameTypeRiight){
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    width: 100%;
+    color: #6a6b6d;
+    font-weight: bold;
+  }
+ 
 }

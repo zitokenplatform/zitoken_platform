@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import style from "./style.css";
 
-import { withStyles } from '@material-ui/core/styles';
+import { lighten, withStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import PlaceIcon from '@material-ui/icons/Place';
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 const styles = theme => ({
   heading: {
@@ -16,6 +18,16 @@ const styles = theme => ({
 
   },
 });
+const BorderLinearProgress = withStyles({
+  root: {
+    height: 10,
+    backgroundColor: '#b3b3b3',
+  },
+  bar: {
+    borderRadius: 20,
+    backgroundColor: '#ff6c5c',
+  },
+})(LinearProgress);
 
 class Site extends Component {
   constructor(props) {
@@ -34,6 +46,89 @@ class Site extends Component {
           <button className={style.AppButtom} onClick={() => this.onStart()}>
             CREATE  CAMPAIGN
           </button>
+        </div>
+        <div className={style.content} id="exploregame" >
+          <Grid container spacing={16}>
+            <Grid item xs={4} sm={4}><p className={style.textGameTypeLeft}>EOS GAMES</p></Grid>
+            <Grid item xs={4} sm={4}><p className={style.textGameTypeCenter}>ETHERIUM GAME</p></Grid>
+            <Grid item xs={4} sm={4}><p className={style.textGameTypeRiight}>TRON GAME</p></Grid>
+          </Grid>
+          <Grid container spacing={16}>
+            <Grid item xs={12} sm={6}>
+              <Grid container spacing={4}>
+                <Grid item xs={12} sm={12}>
+                  <img src="/img/camp.jpg" className={style.imgExplore} />
+                </Grid>
+                <Grid item xs={12} sm={12}>
+                  <p className={style.textGameToBeBlack}>To be announced</p>
+                  <p className={style.textGameToBe}>To be announced</p>
+                </Grid>
+                <Grid item xs={12} sm={12}>
+                  <div className={style.contentIcon}>
+                    <PlaceIcon  className={style.pinIcon}/>
+                    <span className={style.textPinIcon}>Russia</span>
+                  </div>
+                </Grid>  
+                <Grid item  xs={12}  sm={12}>
+                  <div className={style.progressBar}> 
+                    <BorderLinearProgress className={style.progressBar}  variant="determinate" value={1} />
+                  </div>                  
+                </Grid>
+                <Grid item xs={12} sm={12}>
+                  <Grid container spacing={16}>
+                    <Grid item xs={4} sm={4}>60 Days left</Grid>
+                    <Grid item xs={4} sm={4} >Raised</Grid>
+                    <Grid item xs={2} sm={2}>0 BTC</Grid>
+                    <Grid item xs={2} sm={2}>0 ZIT</Grid>
+                  </Grid>  
+                </Grid> 
+                <Grid item xs={12} sm={12}>
+                  <div className={style.contentButtom}>
+                    <button className={style.btExploreGame}>
+                      BACK THIS PROJECT
+                    </button>
+                  </div>                  
+                </Grid>                  
+              </Grid>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Grid container spacing={4}>
+                <Grid item sm={12}>
+                  <img src="/img/camp.jpg" className={style.imgExplore} />
+                </Grid>    
+                <Grid item xs={12} sm={12}>
+                  <p className={style.textGameToBeBlack}>To be announced</p>
+                  <p className={style.textGameToBe}>To be announced</p>
+                </Grid>  
+                <Grid item xs={12} sm={12}>
+                  <div className={style.contentIcon}>
+                    <PlaceIcon  className={style.pinIcon}/>
+                    <span className={style.textPinIcon}>Brazil</span>
+                  </div>
+                </Grid>  
+                <Grid item xs={12} sm={12}>
+                  <div className={style.progressBar}> 
+                    <BorderLinearProgress className={style.progressBar}  variant="determinate" value={1} />
+                  </div>  
+                </Grid>
+                <Grid item xs={12} sm={12}>
+                  <Grid container spacing={16}>
+                    <Grid item xs={4} sm={4}>30 Days left</Grid>
+                    <Grid item xs={4} sm={4} >Raised</Grid>
+                    <Grid item xs={2} sm={2}>0 BTC</Grid>
+                    <Grid item xs={2} sm={2}>0 ZIT</Grid>
+                  </Grid>  
+                </Grid> 
+                <Grid item xs={12} sm={12}>
+                  <div className={style.contentButtom}>
+                    <button className={style.btExploreGame}>
+                      BACK THIS PROJECT
+                    </button>
+                  </div>                  
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
         </div>
         <div className={style.content} id="overview" >
           <h1>OVERVIEW</h1>

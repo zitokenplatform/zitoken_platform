@@ -107,7 +107,7 @@ class StatusBar extends React.Component {
         } else if (value === 4) {
             window.location.href = "/#faq"
         } else if (value === 5) {
-            alert("Under development, check it out our Roadmap");
+            window.location.href = "/#exploregame"
         } else {
             alert("No link!");
         }
