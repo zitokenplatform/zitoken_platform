@@ -1,5 +1,10 @@
 const initialState = {
     valuePage: 1,
+    msn : {
+      type: undefined,
+      messenger:undefined,
+      active:false,
+    }
   };
   
   const site = (state = initialState, action) => {
@@ -8,6 +13,11 @@ const initialState = {
         return {
             ...state,
             valuePage: action.page,
+        };
+        case "GET_ALERT_REDUCER":
+        return {
+            ...state,
+            msn: action.msn,
         };
         default:
         {

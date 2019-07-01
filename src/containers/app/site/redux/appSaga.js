@@ -6,3 +6,9 @@ export function* setPageSaga(action) {
         page: action.page
       });
 }
+export function* setAlertSaga(action) {
+  yield put({
+      type: "GET_ALERT_REDUCER",
+      msn: action.alert
+    });
+}

@@ -2,14 +2,22 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import style from "./style.css";
 
-import { lighten, withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PlaceIcon from '@material-ui/icons/Place';
+import FileCopyIcon from '@material-ui/icons/FileCopy';
+import IconButton from '@material-ui/core/IconButton';
 import LinearProgress from '@material-ui/core/LinearProgress';
+// REDUX
+import PropTypes from 'prop-types';
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+
+import {setAlert} from "../app/site/redux/appAction";
 
 const styles = theme => ({
   heading: {
@@ -36,6 +44,21 @@ class Site extends Component {
   onStart = () => {
     alert("Under development, check it out our Roadmap");
   }
+  copyAddress = address => {
+    let { setAlert } = this.props;
+    const element = document.createElement("textarea");
+    element.value = address;
+    document.body.appendChild(element);
+    element.select();
+    document.execCommand("copy");
+    document.body.removeChild(element);
+    let msn = {
+      type: "S",
+      messenger:"Copy successful!",
+      active:true,
+    }
+    setAlert(msn);
+  };
   render() {
     const { classes } = this.props;
     return (
@@ -129,6 +152,59 @@ class Site extends Component {
               </Grid>
             </Grid>
           </Grid>
+        </div>
+        <div className={style.content} id="backthiscause" >
+          <h1>BACK THIS CAUSE</h1>
+          <p className={style.textoColorBackLight}>
+            <b>BTC Contribution Address:</b> <span onClick={() => this.copyAddress()}>1pmtYBuXXuTp9oupcsEKmXhbS5sakppgJ</span>  
+            <IconButton aria-label="Copy" className={classes.margin} size="small" onClick={() => this.copyAddress()}>
+              <FileCopyIcon fontSize="inherit" />
+            </IconButton>
+            <br />
+            <b>Fill this form</b> <a href="https://forms.gle/JzdKhgeDHm4QULWJ7" target="__blank">here</a>
+          </p>
+          <p className={style.textoColorBackLight}>
+            <b className={style.textoColorPurple}>Bronze Backer</b><br />
+            Contribute 0.009 BTC
+          </p>
+          
+          <p className={style.textoColorBackLight}>
+            <b>Pledge</b><br />
+              Receive 3.100 ZIT +<br />
+              Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1dAwWU7IcpLhDVJpzu-mn5TxakVIdsIxQ/view" target="__blank">view</a>
+               
+          </p>
+          <p className={style.textoColorBackLight}>
+              ESTIMATED DELIVERY<br />
+              July 2019
+          </p>
+          <p className={style.textoColorBackLight}>
+          <b className={style.textoColorPurple}>Silver Backer</b><br />
+            Contribute 0.1 BTC
+          </p>
+          <p className={style.textoColorBackLight}>
+          <b>Pledge</b><br />
+            Receive 32.500 ZIT<br />
+            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1KZedPFA_AP0p1aFemwC_RA4DBZJnsxg8/view" target="__blank">view</a>
+          </p>
+          <p className={style.textoColorBackLight}>
+            ESTIMATED DELIVERY<br />
+            July 2019
+          </p>
+          <p className={style.textoColorBackLight}>
+            <b className={style.textoColorPurple}>Gold Backer</b><br />
+            Contribute 1 BTC
+          </p>
+          <p className={style.textoColorBackLight}>
+            <b>Pledge</b><br />
+            Receive 290K ZIT<br />
+            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1i1VaHPlTwI25_vRnxILcdTAkk5SURQ5Y/view" target="__blank">view</a>
+          </p>
+          <p className={style.textoColorBackLight}>
+            ESTIMATED DELIVERY<br />
+            July 2019
+          </p>
+          <div className={style.screenYoutube}><iframe src="https://www.youtube.com/embed/eRM98dAzirg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
         <div className={style.content} id="overview" >
           <h1>OVERVIEW</h1>
@@ -289,5 +365,18 @@ class Site extends Component {
     );
   }
 }
-
-export default withStyles(styles)(Site);
+Site.propTypes = {
+  setAlert: PropTypes.func,
+};
+const mapSateToProps = store => ({});
+const mapDispatchToProps = dispatch =>
+    bindActionCreators(
+        {
+          setAlert
+        },
+        dispatch
+);
+export default connect(
+  mapSateToProps,
+  mapDispatchToProps
+) (withStyles(styles)(Site));

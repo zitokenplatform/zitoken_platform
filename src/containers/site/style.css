@@ -260,6 +260,18 @@ li {
 :local(.contentButtom) {
   margin-left: 25%;
 }
+:local(.textoColorPurple) {
+  color: purple;
+}
+:local(.textoColorBackLight) {
+  color: #6a6b6d;
+  opacity: 50%;
+}
+:local(.screenYoutube) {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
 @media only screen and (max-width: 768px) {
   :local(.content){     
     margin-left: 20px;
@@ -318,6 +330,11 @@ li {
     width: 100%;
     color: #6a6b6d;
     font-weight: bold;
+  }
+  :local(.screenYoutube) {
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
   }
  
 }

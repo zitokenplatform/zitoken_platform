@@ -99,15 +99,17 @@ class StatusBar extends React.Component {
 
     handleSetPage = value => {
         if (value === 1) {
-            window.location.href = "/#overview"
+            window.location.href = "/#overview";
         } else if (value === 2) {
-            window.location.href = "/#exchanges"
+            window.location.href = "/#exchanges";
         } else if (value === 3) {
-            window.location.href = "/#features"
+            window.location.href = "/#features";
         } else if (value === 4) {
-            window.location.href = "/#faq"
+            window.location.href = "/#faq";
         } else if (value === 5) {
-            window.location.href = "/#exploregame"
+            window.location.href = "/#exploregame";
+        } else if (value === 6) {
+            window.location.href = "/#backthiscause"
         } else {
             alert("No link!");
         }
@@ -135,6 +137,7 @@ class StatusBar extends React.Component {
                         <Hidden xsDown>
                             <BottomNavigation showLabels className={classes.navButtom}  >
                                 <BottomNavigationAction label="EXPLORE GAMES" value="EXPLORE" className={classes.textNavButton} onClick={() => this.handleSetPage(5)} />
+                                <BottomNavigationAction label="BACK THIS CAUSE" value="BACKTHISCAUSE" className={classes.textNavButton} onClick={() => this.handleSetPage(6)} />
                                 <BottomNavigationAction label="OVERVIEW" value="OVERVIEW" className={classes.textNavButton} onClick={() => this.handleSetPage(1)} />
                                 <BottomNavigationAction label="EXCHANGES" value="EXCHANGES" className={classes.textNavButton} onClick={() => this.handleSetPage(2)} />
                                 <BottomNavigationAction label="FEATURES" value="FEATURES" className={classes.textNavButton} onClick={() => this.handleSetPage(3)} />
@@ -165,6 +168,9 @@ class StatusBar extends React.Component {
                         </ListItem>
                         <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(1)}>
                             <ListItemText primary="OVERVIEW" />
+                        </ListItem>
+                        <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(6)}>
+                            <ListItemText primary="BACK THIS CAUSE" />
                         </ListItem>
                         <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(2)}>
                             <ListItemText primary="EXCHANGES" />
