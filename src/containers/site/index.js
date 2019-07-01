@@ -293,7 +293,7 @@ class Site extends Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-                Yes. We are listed on ForkDelta and TokenDex, soon will be listed on more exchanges.
+                Yes. We are listed on couple exchanges, soon will be listed on more exchanges.
           </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
