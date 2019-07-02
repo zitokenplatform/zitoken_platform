@@ -54,7 +54,7 @@ class Site extends Component {
     document.body.removeChild(element);
     let msn = {
       type: "S",
-      messenger:"Copy successful!",
+      messenger:"copied successfully",
       active:true,
     }
     setAlert(msn);
@@ -73,8 +73,8 @@ class Site extends Component {
         <div className={style.content} id="exploregame" >
           <Grid container spacing={16}>
             <Grid item xs={4} sm={4}><p className={style.textGameTypeLeft}>EOS GAMES</p></Grid>
-            <Grid item xs={4} sm={4}><p className={style.textGameTypeCenter}>ETHERIUM GAME</p></Grid>
-            <Grid item xs={4} sm={4}><p className={style.textGameTypeRiight}>TRON GAME</p></Grid>
+            <Grid item xs={4} sm={4}><p className={style.textGameTypeCenter}>ETHEREUM GAMES</p></Grid>
+            <Grid item xs={4} sm={4}><p className={style.textGameTypeRiight}>TRON GAMES</p></Grid>
           </Grid>
           <Grid container spacing={16}>
             <Grid item xs={12} sm={6}>
@@ -170,8 +170,8 @@ class Site extends Component {
           
           <p className={style.textoColorBackLight}>
             <b>Pledge</b><br />
-              Receive 3.100 ZIT +<br />
-              Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1dAwWU7IcpLhDVJpzu-mn5TxakVIdsIxQ/view" target="__blank">view</a>
+              Receive 4.100 ZIT +<br />
+              Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1e89UySGImelcc8s7GrftsnHGnpyroloX/view?usp=sharing" target="__blank">view</a>
                
           </p>
           <p className={style.textoColorBackLight}>
@@ -185,7 +185,7 @@ class Site extends Component {
           <p className={style.textoColorBackLight}>
           <b>Pledge</b><br />
             Receive 32.500 ZIT<br />
-            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1KZedPFA_AP0p1aFemwC_RA4DBZJnsxg8/view" target="__blank">view</a>
+            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1dpR4uiKAahRZ0wdvTKhlFzM9EQMOZyIH/view?usp=sharing" target="__blank">view</a>
           </p>
           <p className={style.textoColorBackLight}>
             ESTIMATED DELIVERY<br />
@@ -198,7 +198,7 @@ class Site extends Component {
           <p className={style.textoColorBackLight}>
             <b>Pledge</b><br />
             Receive 290K ZIT<br />
-            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1i1VaHPlTwI25_vRnxILcdTAkk5SURQ5Y/view" target="__blank">view</a>
+            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1svdX6kxvYJiMAbtFrPkAvFdgTZy_NELz/view?usp=sharing" target="__blank">view</a>
           </p>
           <p className={style.textoColorBackLight}>
             ESTIMATED DELIVERY<br />
