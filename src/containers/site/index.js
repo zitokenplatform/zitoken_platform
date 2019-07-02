@@ -324,7 +324,7 @@ class Site extends Component {
           </p>
           <p className={style.textoColorBackLight}>
           <b>Pledge</b><br />
-            Receive 32.500 ZIT<br />
+            Receive 32.500 ZIT +<br />
             Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1dpR4uiKAahRZ0wdvTKhlFzM9EQMOZyIH/view?usp=sharing" target="__blank">view</a>
           </p>
           <p className={style.textoColorBackLight}>
@@ -337,7 +337,7 @@ class Site extends Component {
           </p>
           <p className={style.textoColorBackLight}>
             <b>Pledge</b><br />
-            Receive 290K ZIT<br />
+            Receive 290K ZIT +<br />
             Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1svdX6kxvYJiMAbtFrPkAvFdgTZy_NELz/view?usp=sharing" target="__blank">view</a>
           </p>
           <p className={style.textoColorBackLight}>
