@@ -54,7 +54,7 @@ class Site extends Component {
     document.body.removeChild(element);
     let msn = {
       type: "S",
-      messenger:"Copy successful!",
+      messenger:"copied successfully",
       active:true,
     }
     setAlert(msn);
@@ -73,8 +73,8 @@ class Site extends Component {
         <div className={style.content} id="exploregame" >
           <Grid container spacing={16}>
             <Grid item xs={4} sm={4}><p className={style.textGameTypeLeft}>EOS GAMES</p></Grid>
-            <Grid item xs={4} sm={4}><p className={style.textGameTypeCenter}>ETHERIUM GAME</p></Grid>
-            <Grid item xs={4} sm={4}><p className={style.textGameTypeRiight}>TRON GAME</p></Grid>
+            <Grid item xs={4} sm={4}><p className={style.textGameTypeCenter}>ETHEREUM GAMES</p></Grid>
+            <Grid item xs={4} sm={4}><p className={style.textGameTypeRiight}>TRON GAMES</p></Grid>
           </Grid>
           <Grid container spacing={16}>
             <Grid item xs={12} sm={6}>
@@ -207,7 +207,7 @@ class Site extends Component {
           <h1>Exchanges</h1>
           <Grid container className={style.AppRodmap} alignItems="center">
             <Grid item><a href="https://forkdelta.app/#!/trade/0x9c04f0dc68c61efd2fc289987393a78b4a2494ea-ETH" target="_blank"><img src="/img/forkDex.png" className={style.imgExchnange} /></a></Grid>
-            <Grid item><a href="https://www.dcoin.com" target="_blank"><img src="/img/tokenDex.png" className={style.imgExchnange} /></a></Grid>
+            <Grid item><a href="https://www.zitoken.me" target="_blank"><img src="/img/tokenDex.png" className={style.imgExchnange} /></a></Grid>
           </Grid>
         </div>
         <div className={style.contenFaq} id="faq">
