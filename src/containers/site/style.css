@@ -333,8 +333,9 @@ li {
   }
   :local(.screenYoutube) {
     margin: 0 auto;
-    width: 300px;
+    width: 100%;
     height: auto;
+    margin-bottom: 10px;
   }
  
 }

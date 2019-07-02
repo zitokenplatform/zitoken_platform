@@ -152,60 +152,7 @@ class Site extends Component {
               </Grid>
             </Grid>
           </Grid>
-        </div>
-        <div className={style.content} id="backthiscause" >
-          <h1>BACK THIS CAUSE</h1>
-          <p className={style.textoColorBackLight}>
-            <b>BTC Contribution Address:</b> <span onClick={() => this.copyAddress()}>1pmtYBuXXuTp9oupcsEKmXhbS5sakppgJ</span>  
-            <IconButton aria-label="Copy" className={classes.margin} size="small" onClick={() => this.copyAddress()}>
-              <FileCopyIcon fontSize="inherit" />
-            </IconButton>
-            <br />
-            <b>Fill this form</b> <a href="https://forms.gle/JzdKhgeDHm4QULWJ7" target="__blank">here</a>
-          </p>
-          <p className={style.textoColorBackLight}>
-            <b className={style.textoColorPurple}>Bronze Backer</b><br />
-            Contribute 0.009 BTC
-          </p>
-          
-          <p className={style.textoColorBackLight}>
-            <b>Pledge</b><br />
-              Receive 3.100 ZIT +<br />
-              Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1dAwWU7IcpLhDVJpzu-mn5TxakVIdsIxQ/view" target="__blank">view</a>
-               
-          </p>
-          <p className={style.textoColorBackLight}>
-              ESTIMATED DELIVERY<br />
-              July 2019
-          </p>
-          <p className={style.textoColorBackLight}>
-          <b className={style.textoColorPurple}>Silver Backer</b><br />
-            Contribute 0.1 BTC
-          </p>
-          <p className={style.textoColorBackLight}>
-          <b>Pledge</b><br />
-            Receive 32.500 ZIT<br />
-            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1KZedPFA_AP0p1aFemwC_RA4DBZJnsxg8/view" target="__blank">view</a>
-          </p>
-          <p className={style.textoColorBackLight}>
-            ESTIMATED DELIVERY<br />
-            July 2019
-          </p>
-          <p className={style.textoColorBackLight}>
-            <b className={style.textoColorPurple}>Gold Backer</b><br />
-            Contribute 1 BTC
-          </p>
-          <p className={style.textoColorBackLight}>
-            <b>Pledge</b><br />
-            Receive 290K ZIT<br />
-            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1i1VaHPlTwI25_vRnxILcdTAkk5SURQ5Y/view" target="__blank">view</a>
-          </p>
-          <p className={style.textoColorBackLight}>
-            ESTIMATED DELIVERY<br />
-            July 2019
-          </p>
-          <div className={style.screenYoutube}><iframe src="https://www.youtube.com/embed/eRM98dAzirg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        </div>
+        </div>        
         <div className={style.content} id="overview" >
           <h1>OVERVIEW</h1>
           <strong>About Zitoken Platform</strong>
@@ -345,6 +292,59 @@ class Site extends Component {
               Earn free ZIT on our bounties and airdrops.
             </li>
           </ul>
+        </div>
+        <div className={style.content} id="backthiscause" >
+          <h1>BACK THIS CAUSE</h1>
+          <p className={style.textoColorBackLight}>
+            <b>BTC Contribution Address:</b> <span onClick={() => this.copyAddress('1pmtYBuXXuTp9oupcsEKmXhbS5sakppgJ')}>1pmtYBuXXuTp9oupcsEKmXhbS5sakppgJ</span>  
+            <IconButton aria-label="Copy" className={classes.margin} size="small" onClick={() => this.copyAddress('1pmtYBuXXuTp9oupcsEKmXhbS5sakppgJ')}>
+              <FileCopyIcon fontSize="inherit" />
+            </IconButton>
+            <br />
+            <b>Fill this form</b> <a href="https://forms.gle/JzdKhgeDHm4QULWJ7" target="__blank">here</a>
+          </p>
+          <p className={style.textoColorBackLight}>
+            <b className={style.textoColorPurple}>Bronze Backer</b><br />
+            Contribute 0.009 BTC
+          </p>
+          
+          <p className={style.textoColorBackLight}>
+            <b>Pledge</b><br />
+              Receive 3.100 ZIT +<br />
+              Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1dAwWU7IcpLhDVJpzu-mn5TxakVIdsIxQ/view" target="__blank">view</a>
+               
+          </p>
+          <p className={style.textoColorBackLight}>
+              ESTIMATED DELIVERY<br />
+              July 2019
+          </p>
+          <p className={style.textoColorBackLight}>
+          <b className={style.textoColorPurple}>Silver Backer</b><br />
+            Contribute 0.1 BTC
+          </p>
+          <p className={style.textoColorBackLight}>
+          <b>Pledge</b><br />
+            Receive 32.500 ZIT<br />
+            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1KZedPFA_AP0p1aFemwC_RA4DBZJnsxg8/view" target="__blank">view</a>
+          </p>
+          <p className={style.textoColorBackLight}>
+            ESTIMATED DELIVERY<br />
+            July 2019
+          </p>
+          <p className={style.textoColorBackLight}>
+            <b className={style.textoColorPurple}>Gold Backer</b><br />
+            Contribute 1 BTC
+          </p>
+          <p className={style.textoColorBackLight}>
+            <b>Pledge</b><br />
+            Receive 290K ZIT<br />
+            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1i1VaHPlTwI25_vRnxILcdTAkk5SURQ5Y/view" target="__blank">view</a>
+          </p>
+          <p className={style.textoColorBackLight}>
+            ESTIMATED DELIVERY<br />
+            July 2019
+          </p>
+          <div className={style.screenYoutube}><center><iframe src="https://www.youtube.com/embed/eRM98dAzirg" frameborder="0" width="450px" height="300px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></div>
         </div>
         <div className={style.AppFoot}>
           <div className={style.textFoot}>

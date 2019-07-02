@@ -136,12 +136,12 @@ class StatusBar extends React.Component {
                         </Typography>
                         <Hidden xsDown>
                             <BottomNavigation showLabels className={classes.navButtom}  >
-                                <BottomNavigationAction label="EXPLORE GAMES" value="EXPLORE" className={classes.textNavButton} onClick={() => this.handleSetPage(5)} />
-                                <BottomNavigationAction label="BACK THIS CAUSE" value="BACKTHISCAUSE" className={classes.textNavButton} onClick={() => this.handleSetPage(6)} />
+                                <BottomNavigationAction label="EXPLORE GAMES" value="EXPLORE" className={classes.textNavButton} onClick={() => this.handleSetPage(5)} />                                
                                 <BottomNavigationAction label="OVERVIEW" value="OVERVIEW" className={classes.textNavButton} onClick={() => this.handleSetPage(1)} />
                                 <BottomNavigationAction label="EXCHANGES" value="EXCHANGES" className={classes.textNavButton} onClick={() => this.handleSetPage(2)} />
                                 <BottomNavigationAction label="FEATURES" value="FEATURES" className={classes.textNavButton} onClick={() => this.handleSetPage(3)} />
                                 <BottomNavigationAction label="FAQ" value="FAQ" className={classes.textNavButton} onClick={() => this.handleSetPage(4)} />
+                                <BottomNavigationAction label="BACK THIS CAUSE" value="BACKTHISCAUSE" className={classes.textNavButton} onClick={() => this.handleSetPage(6)} />
                             </BottomNavigation>
                         </Hidden>
                     </Toolbar>
@@ -168,10 +168,7 @@ class StatusBar extends React.Component {
                         </ListItem>
                         <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(1)}>
                             <ListItemText primary="OVERVIEW" />
-                        </ListItem>
-                        <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(6)}>
-                            <ListItemText primary="BACK THIS CAUSE" />
-                        </ListItem>
+                        </ListItem>                        
                         <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(2)}>
                             <ListItemText primary="EXCHANGES" />
                         </ListItem>
@@ -180,6 +177,9 @@ class StatusBar extends React.Component {
                         </ListItem>
                         <ListItem button>
                             <ListItemText primary="FAQ" className={classes.textNavButton} onClick={() => this.handleSetPage(4)} />
+                        </ListItem>
+                        <ListItem button className={classes.textNavButton} onClick={() => this.handleSetPage(6)}>
+                            <ListItemText primary="BACK THIS CAUSE" />
                         </ListItem>
                     </List>
                 </Drawer>
