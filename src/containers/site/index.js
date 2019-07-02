@@ -89,7 +89,7 @@ class Site extends Component {
                 <Grid item xs={12} sm={12}>
                   <div className={style.contentIcon}>
                     <PlaceIcon  className={style.pinIcon}/>
-                    <span className={style.textPinIcon}>Russia</span>
+                    <span className={style.textPinIcon}>Cyprus</span>
                   </div>
                 </Grid>  
                 <Grid item  xs={12}  sm={12}>
@@ -126,7 +126,7 @@ class Site extends Component {
                 <Grid item xs={12} sm={12}>
                   <div className={style.contentIcon}>
                     <PlaceIcon  className={style.pinIcon}/>
-                    <span className={style.textPinIcon}>Brazil</span>
+                    <span className={style.textPinIcon}>Russia</span>
                   </div>
                 </Grid>  
                 <Grid item xs={12} sm={12}>
@@ -310,8 +310,8 @@ class Site extends Component {
           
           <p className={style.textoColorBackLight}>
             <b>Pledge</b><br />
-              Receive 3.100 ZIT +<br />
-              Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1dAwWU7IcpLhDVJpzu-mn5TxakVIdsIxQ/view" target="__blank">view</a>
+              Receive 3.700 ZIT +<br />
+              Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1e89UySGImelcc8s7GrftsnHGnpyroloX/view?usp=sharing" target="__blank">view</a>
                
           </p>
           <p className={style.textoColorBackLight}>
@@ -325,7 +325,7 @@ class Site extends Component {
           <p className={style.textoColorBackLight}>
           <b>Pledge</b><br />
             Receive 32.500 ZIT<br />
-            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1KZedPFA_AP0p1aFemwC_RA4DBZJnsxg8/view" target="__blank">view</a>
+            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1dpR4uiKAahRZ0wdvTKhlFzM9EQMOZyIH/view?usp=sharing" target="__blank">view</a>
           </p>
           <p className={style.textoColorBackLight}>
             ESTIMATED DELIVERY<br />
@@ -338,7 +338,7 @@ class Site extends Component {
           <p className={style.textoColorBackLight}>
             <b>Pledge</b><br />
             Receive 290K ZIT<br />
-            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1i1VaHPlTwI25_vRnxILcdTAkk5SURQ5Y/view" target="__blank">view</a>
+            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1svdX6kxvYJiMAbtFrPkAvFdgTZy_NELz/view?usp=sharing" target="__blank">view</a>
           </p>
           <p className={style.textoColorBackLight}>
             ESTIMATED DELIVERY<br />
