@@ -108,7 +108,7 @@ class Site extends Component {
                 <Grid item xs={12} sm={12}>
                   <div className={style.contentButtom}>
                     <button className={style.btExploreGame}>
-                      BACK THIS PROJECT
+                      BACK THIS GAME
                     </button>
                   </div>                  
                 </Grid>                  
@@ -145,7 +145,7 @@ class Site extends Component {
                 <Grid item xs={12} sm={12}>
                   <div className={style.contentButtom}>
                     <button className={style.btExploreGame}>
-                      BACK THIS PROJECT
+                      BACK THIS GAME
                     </button>
                   </div>                  
                 </Grid>
