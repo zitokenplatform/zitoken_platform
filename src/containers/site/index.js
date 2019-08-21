@@ -350,7 +350,6 @@ class Site extends Component {
           <div className={style.textFoot}>
             <spam>© 2019 Zifoundation.org - All rights reserved</spam>
           </div>
-
           <div className={style.AppFootLink}>
             <Grid container spacing={16}>
               <Grid item><a href="https://github.com/ZitokenProject">Github</a></Grid>
