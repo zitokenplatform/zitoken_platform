@@ -42,7 +42,7 @@ class Site extends Component {
     super(props);
   }
   onStart = () => {
-    alert("Under development, check it out our Roadmap");
+    alert("We are in Beta phase");
   }
   copyAddress = address => {
     let { setAlert } = this.props;
@@ -64,7 +64,7 @@ class Site extends Component {
     return (
       <div className={style.App}>
         <div className={style.AppHeader}>
-          <h1 className={style.AppLogo}>Crowdfunding for blockchain games</h1>
+          <h1 className={style.AppLogo}>Crowdfunding for blockchain games & traditional games</h1>
           <p className={style.AppP}>Use Bitcoin and ZITOKEN (ZIT) as credit to support  the development of  amazing games</p>
           <button className={style.AppButtom} onClick={() => this.onStart()}>
             CREATE  CAMPAIGN
@@ -157,7 +157,7 @@ class Site extends Component {
           <h1>OVERVIEW</h1>
           <strong>About Zitoken Platform</strong>
           <p className={style.textContent}>
-            Zitoken platform is a crowdfunding for blockchain games, on which is possible to fund the development of different games such as strategy games with (characters and gods) using ZITOKEN ZIT as credit, Bitcoin option is available to contribute as well. Platform is been designed to support a wide range of games developed on Blockchain Technology.
+            Zitoken platform is a crowdfunding for blockchain games & traditional games, on which is possible to fund the development of different games such as strategy games with (characters and gods) using ZITOKEN ZIT as credit, Bitcoin option is available to contribute as well. Platform is been designed to support a wide range of games developed on Blockchain Technology.
             Initially the platform will accept only ZIT and BTC as payment method and soon we will be considering new payment methods to contribute.
             <br /><br />
             <a href="/whitepaper/Whitepaper-Zitoken.pdf">Whitepaper</a>
@@ -181,30 +181,32 @@ class Site extends Component {
           </p>
           <strong>Roadmap</strong>
           <Grid container className={style.AppRodmap} spacing={16}>
-            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2018</p><p className={style.textSmall}>Core Development</p></Grid>
-            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q3 2019</p><p className={style.textSmall}>Launch</p></Grid>
-            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2019</p><p className={style.textSmall}>First Update to accept new game protocols </p></Grid>
-            <Grid item xs={12} sm={3}><p className={style.textBlue}>Q2 2020</p><p className={style.textSmall}>Second Update to accept new game protocols </p></Grid>
-            <Grid item xs={12} sm={3}><p className={style.textBlue}>Q1 2021</p><p className={style.textSmall}>Third Update to accept new game protocols </p></Grid>
+            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2018</p><p className={style.textSmall}>Core Development of Zitoken Platform</p></Grid>
+    <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2019</p><p className={style.textSmall}>Beta Test Phase</p></Grid>
+            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q4 2019 - Q1 2020</p><p className={style.textSmall}>Win-win Partnerships</p></Grid>
+            <Grid item xs={12} sm={2}><p className={style.textBlue}>Q1 2020</p><p className={style.textSmall}>Official Launch of Zitoken Platform </p></Grid>
+            <Grid item xs={12} sm={3}><p className={style.textBlue}>Q2 2020</p><p className={style.textSmall}>New update to accept a wide range of (campaigns)</p></Grid>
+            <Grid item xs={12} sm={3}><p className={style.textBlue}>Q1 2021</p><p className={style.textSmall}>New partnerships to be announced</p></Grid>
+            <Grid item xs={12} sm={3}><p className={style.textBlue}>2022-2030</p><p className={style.textSmall}>New products & Causes to be explored</p></Grid>
           </Grid>
 
           <h1>Team</h1>
           <strong>MANAGEMENT</strong>
           <p>Leandro Alves, General Manager Zitoken</p>
-          <p>Leandro is founder of PW7 , a blockchain engagement agency that provides Exchange Listing,
-            he also contributed on different other blockchain projects as consultant/growth hacker such as SID (Share Internet Data).
+          <p>Leandro is founder of PW7 , a blockchain engagement agency that provides Marketing support,
+            he also contributed on different other blockchain projects as consultant/growth hacker.
             <br />https://www.linkedin.com/in/leandro-alves-122665137
           </p>
           <strong>PARTNER DEVELOPER</strong>
-          <p>Djalma Bina, Developer Zitoken</p>
+          <p>Djalma Bina, Developer to test Zitoken tools</p>
           <p>Back-end/Font-end.</p>
           <p> Djalma is an experienced full stack developer over 25 years working with software development and systems,
-            has strong knowledge about C++ , Python and Machine Learning, started his career from 90's years working with C++ ANSI Standard .
+            has strong knowledge about C++ , Python and Lisp, started his career from 90's years working with C++ ANSI Standard .
              <br />https://www.linkedin.com/in/djalmabina/
           </p>
         </div>
         <div className={style.AppExchange} id="exchanges">
-          <h1>Exchanges</h1>
+          <h1>Partners</h1>
           <Grid container className={style.AppRodmap} alignItems="center">
             <Grid item><a href="https://forkdelta.app/#!/trade/0x9c04f0dc68c61efd2fc289987393a78b4a2494ea-ETH" target="_blank"><img src="/img/forkDex.png" className={style.imgExchnange} /></a></Grid>
             <Grid item><a href="https://www.zitoken.me" target="_blank"><img src="/img/tokenDex.png" className={style.imgExchnange} /></a></Grid>
@@ -220,7 +222,7 @@ class Site extends Component {
               <Typography>
                 Zitoken platform is a crowdfunding for blockchain games, on which is possible to fund the development of different games such as strategy games with
                 (characters and gods) using ZITOKEN ZIT (our utility token) as credit.
-                Platform is been designed to support a wide range of games developed on Blockchain Technology.
+                Platform is been designed to support a wide range of game campaigns developed on Blockchain Technology.
               </Typography>
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -282,6 +284,13 @@ class Site extends Component {
         <div className={style.contenFuture} id="features">
           <h1>FEATURES</h1><br />
           <ul>
+             <li>
+              Zitoken Platform unifies blockchain game campaigns and traditional game campaigns in a single platform
+            </li>
+              >
+             <li>
+              Zitoken Platform connect a wide range of games with game lovers
+            </li>
             <li>
               Use ZITOKEN (ZIT) as credit to support all games on our platform
             </li>
@@ -289,66 +298,14 @@ class Site extends Component {
               Earn rewards to support the development of specific games.
             </li>
             <li>
-              Earn free ZIT on our bounties and airdrops.
+              Track and add coupons from gaming industry.
             </li>
           </ul>
         </div>
-        <div className={style.content} id="backthiscause" >
-          <h1>BACK THIS CAUSE</h1>
-          <p className={style.textoColorBackLight}>
-            <b>BTC Contribution Address:</b> <span onClick={() => this.copyAddress('1pmtYBuXXuTp9oupcsEKmXhbS5sakppgJ')}>1pmtYBuXXuTp9oupcsEKmXhbS5sakppgJ</span>  
-            <IconButton aria-label="Copy" className={classes.margin} size="small" onClick={() => this.copyAddress('1pmtYBuXXuTp9oupcsEKmXhbS5sakppgJ')}>
-              <FileCopyIcon fontSize="inherit" />
-            </IconButton>
-            <br />
-            <b>Fill this form</b> <a href="https://forms.gle/JzdKhgeDHm4QULWJ7" target="__blank">here</a>
-          </p>
-          <p className={style.textoColorBackLight}>
-            <b className={style.textoColorPurple}>Bronze Backer</b><br />
-            Contribute 0.009 BTC
-          </p>
-          
-          <p className={style.textoColorBackLight}>
-            <b>Pledge</b><br />
-              Receive 3.700 ZIT +<br />
-              Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1e89UySGImelcc8s7GrftsnHGnpyroloX/view?usp=sharing" target="__blank">view</a>
-               
-          </p>
-          <p className={style.textoColorBackLight}>
-              ESTIMATED DELIVERY<br />
-              July 2019
-          </p>
-          <p className={style.textoColorBackLight}>
-          <b className={style.textoColorPurple}>Silver Backer</b><br />
-            Contribute 0.1 BTC
-          </p>
-          <p className={style.textoColorBackLight}>
-          <b>Pledge</b><br />
-            Receive 32.500 ZIT +<br />
-            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1dpR4uiKAahRZ0wdvTKhlFzM9EQMOZyIH/view?usp=sharing" target="__blank">view</a>
-          </p>
-          <p className={style.textoColorBackLight}>
-            ESTIMATED DELIVERY<br />
-            July 2019
-          </p>
-          <p className={style.textoColorBackLight}>
-            <b className={style.textoColorPurple}>Gold Backer</b><br />
-            Contribute 1 BTC
-          </p>
-          <p className={style.textoColorBackLight}>
-            <b>Pledge</b><br />
-            Receive 290K ZIT +<br />
-            Digital Poster with your name ready to print <a href="https://drive.google.com/file/d/1svdX6kxvYJiMAbtFrPkAvFdgTZy_NELz/view?usp=sharing" target="__blank">view</a>
-          </p>
-          <p className={style.textoColorBackLight}>
-            ESTIMATED DELIVERY<br />
-            July 2019
-          </p>
-          <div className={style.screenYoutube}><center><iframe src="https://www.youtube.com/embed/eRM98dAzirg" frameborder="0" width="450px" height="300px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></div>
-        </div>
+        
         <div className={style.AppFoot}>
           <div className={style.textFoot}>
-            <spam>© 2019 Zifoundation.org - All rights reserved</spam>
+            <spam>© 2019 Zitoken - All rights reserved</spam>
           </div>
           <div className={style.AppFootLink}>
             <Grid container spacing={16}>
